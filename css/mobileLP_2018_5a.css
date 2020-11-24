@@ -1,0 +1,397 @@
+/* Custom Cursors */
+/* Tables and such */
+/* $left-column-width:round(percentage(636px / $site-width)); //636 */
+/* $left-column-width:round($site-width / 100 * 66.53); //636 */
+/* Will divide 100% while the current won't */
+/* $right-column-width: round(percentage(300px / $site-width)); //300 */
+/* $right-column-width:round($site-width / 100 * 31.38); //300 */
+/* $left-column-wide-width:round(percentage(816px / $site-width)); //816 */
+/* $left-column-wide-width:round($site-width / 100 * 85.36); //816 */
+/* $right-column-wide-width: round(percentage(120px / $site-width)); //120 */
+/* $right-column-wide-width:round($site-width / 100 * 12.55); //120 */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+HTML {
+  font-size: 10px; }
+  HTML {
+    font-size: 7px; }
+    @media screen and (min-width: 1024px) {
+      HTML {
+        font-size: calc(7px + 3 * ((100vw - 1024px) / 256)); } }
+    @media screen and (min-width: 1280px) {
+      HTML {
+        font-size: 10px; } }
+
+HTML.mobileLP .topBar .countrySelPopup UL {
+  box-sizing: content-box; }
+HTML.mobileLP NAV {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20rem;
+  z-index: 3;
+  transition: 0.2s all linear;
+  right: 4rem; }
+  HTML.mobileLP NAV.rotemClass {
+    top: -49.7rem; }
+  HTML.mobileLP NAV UL {
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; }
+  HTML.mobileLP NAV LI {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #CCD2DB;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: 0 solid #FAA61A;
+    transition: 0.2s all linear;
+    box-sizing: content-box; }
+    HTML.mobileLP NAV LI::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(249, 252, 255, 0.8);
+      position: absolute;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.2s all linear; }
+    HTML.mobileLP NAV LI A {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    HTML.mobileLP NAV LI:last-child {
+      margin: 0; }
+    HTML.mobileLP NAV LI.current {
+      cursor: auto;
+      opacity: 0.5;
+      border-width: 2px; }
+      HTML.mobileLP NAV LI.current::after {
+        transform: scale(1); }
+HTML.mobileLP .wrapper {
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+  background: url(../landingPages/mobile_2018/background.png) center center;
+  background-size: cover; }
+  HTML.mobileLP .wrapper SECTION {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    HTML.mobileLP .wrapper SECTION .download-links {
+      margin-top: 4rem; }
+      HTML.mobileLP .wrapper SECTION .download-links IMG {
+        margin-top: -1.6rem;
+        vertical-align: middle; }
+        HTML.mobileLP .wrapper SECTION .download-links IMG.cn-qr-code {
+          display: block;
+          width: 11.8rem;
+          margin: 1.1rem 0 0 -1.1rem; }
+      HTML.mobileLP .wrapper SECTION .download-links .apple-img,
+      HTML.mobileLP .wrapper SECTION .download-links .google-img {
+        height: 6.3rem;
+        margin-left: -1.1rem; }
+      HTML.mobileLP .wrapper SECTION .download-links A {
+        margin-right: 2rem; }
+        HTML.mobileLP .wrapper SECTION .download-links A:hover {
+          text-decoration: none; }
+    HTML.mobileLP .wrapper SECTION .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      HTML.mobileLP .wrapper SECTION .text h1, HTML.mobileLP .wrapper SECTION .text h2 {
+        line-height: 1.15; }
+      HTML.mobileLP .wrapper SECTION .text h2 {
+        font-size: 4rem;
+        font-weight: 700; }
+        HTML.mobileLP .wrapper SECTION .text h2::after {
+          content: '';
+          background-color: #FFA500;
+          width: 10rem;
+          height: 0.3rem;
+          display: block;
+          margin: 3rem 0 1.1rem 0; }
+      HTML.mobileLP .wrapper SECTION .text P {
+        font-size: 1.8rem;
+        line-height: 1.7; }
+    HTML.mobileLP .wrapper SECTION.hero {
+      padding: 3.8rem 29rem 0;
+      position: relative; }
+      HTML.mobileLP .wrapper SECTION.hero > .imgContainer {
+        align-self: center;
+        margin-left: -9.6rem;
+        margin-right: 4.2rem; }
+      HTML.mobileLP .wrapper SECTION.hero H1 {
+        font-size: 5.4rem;
+        margin: 15rem 0 2.6rem -0.4rem; }
+      HTML.mobileLP .wrapper SECTION.hero .text {
+        min-width: 54.5rem; }
+    HTML.mobileLP .wrapper SECTION.realtime-quotes {
+      padding: 0 40.3rem;
+      margin-top: -4.3rem; }
+      HTML.mobileLP .wrapper SECTION.realtime-quotes > .imgContainer {
+        margin-right: -35.2rem; }
+      HTML.mobileLP .wrapper SECTION.realtime-quotes .text {
+        min-width: 38.8rem;
+        padding-top: 11.6rem;
+        margin-right: 1.6rem;
+        padding-left: 1.4rem; }
+    HTML.mobileLP .wrapper SECTION.economic-calendar {
+      padding: 7.2rem 40.3rem; }
+      HTML.mobileLP .wrapper SECTION.economic-calendar > .imgContainer {
+        margin-left: -12.1rem; }
+      HTML.mobileLP .wrapper SECTION.economic-calendar .text {
+        min-width: 42.8rem;
+        padding-top: 19.3rem;
+        margin-left: 7.7em;
+        padding-left: 1.9rem; }
+    HTML.mobileLP .wrapper SECTION.breaking-news {
+      padding: 0 40.3rem; }
+      HTML.mobileLP .wrapper SECTION.breaking-news > .imgContainer {
+        margin-top: -8.9rem;
+        margin-right: -1.2rem; }
+      HTML.mobileLP .wrapper SECTION.breaking-news .text {
+        min-width: 50.8rem;
+        padding-top: 16.6rem;
+        margin-right: 9.9rem;
+        padding-left: 1.4rem; }
+    HTML.mobileLP .wrapper SECTION.portfolio {
+      padding: 12.3rem 26.2rem; }
+      HTML.mobileLP .wrapper SECTION.portfolio > IMG {
+        margin-left: -14.7rem; }
+      HTML.mobileLP .wrapper SECTION.portfolio .text {
+        min-width: 44.3rem;
+        padding-top: 12.1rem;
+        margin-left: 6.1rem; }
+    HTML.mobileLP .wrapper SECTION.hero .imgContainer, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer {
+      order: 1; }
+    HTML.mobileLP .wrapper SECTION.hero .text, HTML.mobileLP .wrapper SECTION.economic-calendar .text, HTML.mobileLP .wrapper SECTION.portfolio .text {
+      order: 2; }
+    HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer {
+      order: 2; }
+    HTML.mobileLP .wrapper SECTION.realtime-quotes .text, HTML.mobileLP .wrapper SECTION.breaking-news .text {
+      order: 1; }
+    HTML.mobileLP .wrapper SECTION IMG {
+      z-index: 2; }
+HTML.mobileLP #footerWrapper {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  HTML.mobileLP #footerWrapper SECTION {
+    display: block; }
+  HTML.mobileLP #footerWrapper .top,
+  HTML.mobileLP #footerWrapper .bottom {
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    width: 956px;
+    position: relative;
+    box-sizing: content-box; }
+
+@media screen and (max-width: 63.9375em) {
+  HTML.mobileLP .wrapper {
+    overflow-x: scroll; }
+    HTML.mobileLP .wrapper SECTION.hero .imgContainer, HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer {
+      flex: 0 1 auto;
+      display: flex;
+      justify-content: center; }
+      HTML.mobileLP .wrapper SECTION.hero .imgContainer IMG, HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer IMG, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer IMG, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer IMG, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer IMG {
+        flex: 0 1 auto; }
+    HTML.mobileLP .wrapper SECTION.hero .imgContainer IMG {
+      width: 43.7rem;
+      height: 54.7rem; }
+    HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer IMG {
+      width: 69.1rem;
+      height: 37.9rem; }
+    HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer IMG {
+      width: 41.9rem;
+      height: 51.8rem; }
+    HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer IMG {
+      width: 35.7rem;
+      height: 51.3rem; }
+    HTML.mobileLP .wrapper SECTION.portfolio .imgContainer IMG {
+      width: 40.6rem;
+      height: 25.8rem; } }
+@media screen and (min-width: 64em) and (max-width: 80.5625em) {
+  HTML.mobileLP .wrapper SECTION.hero .imgContainer, HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer {
+    flex: 0 1 auto;
+    min-width: 90%; }
+    HTML.mobileLP .wrapper SECTION.hero .imgContainer IMG, HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer IMG, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer IMG, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer IMG, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer IMG {
+      flex: 0 1 auto;
+      width: 100%;
+      height: 100%; } }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  HTML.mobileLP .wrapper {
+    background: url(../landingPages/mobile_2018/background-320.png) top center; } }
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  HTML.mobileLP {
+    font-size: 10px; }
+    HTML.mobileLP .topBar .topBarLogo {
+      margin-left: 16px; }
+    HTML.mobileLP .topBar .topBarInnerWrapper {
+      width: auto; }
+    HTML.mobileLP .topBar .searchDiv, HTML.mobileLP .topBar .topBarTools {
+      display: none; }
+    HTML.mobileLP .wrapper {
+      width: 100vw;
+      overflow-x: hidden; }
+      HTML.mobileLP .wrapper NAV {
+        display: none; }
+      HTML.mobileLP .wrapper SECTION {
+        flex-direction: column; }
+        HTML.mobileLP .wrapper SECTION .download-links {
+          margin-top: 1rem;
+          margin-bottom: 3rem; }
+          HTML.mobileLP .wrapper SECTION .download-links A {
+            margin: 0; }
+          HTML.mobileLP .wrapper SECTION .download-links .apple-img, HTML.mobileLP .wrapper SECTION .download-links .google-img {
+            height: 5.8rem;
+            margin: 0; }
+        HTML.mobileLP .wrapper SECTION .text H2 {
+          font-size: 2.5rem; }
+        HTML.mobileLP .wrapper SECTION .text P {
+          font-size: 1.5rem; }
+        HTML.mobileLP .wrapper SECTION.hero {
+          margin-top: 0;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem; }
+          HTML.mobileLP .wrapper SECTION.hero .imgContainer {
+            width: 33rem;
+            margin-left: 0;
+            margin-right: 4.2rem; }
+            HTML.mobileLP .wrapper SECTION.hero .imgContainer IMG {
+              width: 100%;
+              height: 100%; }
+          HTML.mobileLP .wrapper SECTION.hero H1 {
+            margin: 0;
+            margin-bottom: 1rem;
+            font-size: 3rem; }
+        HTML.mobileLP .wrapper SECTION.realtime-quotes {
+          padding: 0 1rem;
+          margin: 7.5rem 0 0; }
+          HTML.mobileLP .wrapper SECTION.realtime-quotes > .imgContainer {
+            align-self: center;
+            margin: 0;
+            width: 56.7rem; }
+            HTML.mobileLP .wrapper SECTION.realtime-quotes > .imgContainer IMG {
+              width: 100%;
+              height: 100%;
+              position: relative; }
+          HTML.mobileLP .wrapper SECTION.realtime-quotes .text {
+            margin: 0;
+            padding: 0; }
+        HTML.mobileLP .wrapper SECTION.economic-calendar {
+          padding: 0;
+          margin-top: 7.5rem; }
+          HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer {
+            margin: 0;
+            width: 32rem;
+            margin-left: -2.4rem; }
+            HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer IMG {
+              width: 100%;
+              height: 100%; }
+          HTML.mobileLP .wrapper SECTION.economic-calendar .text {
+            margin: 0;
+            padding: 0; }
+        HTML.mobileLP .wrapper SECTION.breaking-news {
+          margin-top: 7.5rem;
+          padding: 0; }
+          HTML.mobileLP .wrapper SECTION.breaking-news > .imgContainer {
+            margin: 0;
+            width: 30rem; }
+            HTML.mobileLP .wrapper SECTION.breaking-news > .imgContainer IMG {
+              width: 100%;
+              height: 100%; }
+          HTML.mobileLP .wrapper SECTION.breaking-news .text {
+            margin: 0;
+            padding: 0; }
+        HTML.mobileLP .wrapper SECTION.portfolio {
+          margin: 7.5rem 0 0;
+          padding: 0; }
+          HTML.mobileLP .wrapper SECTION.portfolio > .imgContainer {
+            width: 100%;
+            margin-left: 1rem; }
+            HTML.mobileLP .wrapper SECTION.portfolio > .imgContainer IMG {
+              width: 100%;
+              height: 100%; }
+          HTML.mobileLP .wrapper SECTION.portfolio .text {
+            margin: 0;
+            padding: 0;
+            max-width: 29rem;
+            align-self: center; }
+        HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer {
+          align-self: center; }
+        HTML.mobileLP .wrapper SECTION.hero .imgContainer, HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer, HTML.mobileLP .wrapper SECTION.portfolio .imgContainer, HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer, HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer {
+          order: 2; }
+        HTML.mobileLP .wrapper SECTION.hero .text, HTML.mobileLP .wrapper SECTION.economic-calendar .text, HTML.mobileLP .wrapper SECTION.portfolio .text, HTML.mobileLP .wrapper SECTION.realtime-quotes .text, HTML.mobileLP .wrapper SECTION.breaking-news .text {
+          min-width: auto;
+          text-align: center;
+          order: 1; }
+        HTML.mobileLP .wrapper SECTION.hero H2::after, HTML.mobileLP .wrapper SECTION.economic-calendar H2::after, HTML.mobileLP .wrapper SECTION.portfolio H2::after, HTML.mobileLP .wrapper SECTION.realtime-quotes H2::after, HTML.mobileLP .wrapper SECTION.breaking-news H2::after {
+          margin: 3rem auto 1.1rem; }
+    HTML.mobileLP *[data-aos=fade-left], HTML.mobileLP *[data-aos=fade-right] {
+      transform: translate(0);
+      opacity: 1; }
+    HTML.mobileLP #footerWrapper .top {
+      display: none; }
+    HTML.mobileLP #footerWrapper .bottom {
+      width: 100%;
+      box-sizing: border-box; }
+    HTML.mobileLP.cn .wrapper SECTION.hero, HTML.mobileLP.cn .wrapper SECTION.economic-calendar, HTML.mobileLP.cn .wrapper SECTION.portfolio, HTML.mobileLP.cn .wrapper SECTION.realtime-quotes, HTML.mobileLP.cn .wrapper SECTION.breaking-news {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+    HTML.mobileLP.cn .wrapper SECTION.hero > .imgContainer, HTML.mobileLP.cn .wrapper SECTION.economic-calendar > .imgContainer, HTML.mobileLP.cn .wrapper SECTION.portfolio > .imgContainer, HTML.mobileLP.cn .wrapper SECTION.realtime-quotes > .imgContainer, HTML.mobileLP.cn .wrapper SECTION.breaking-news > .imgContainer {
+      margin-left: 0;
+      margin-right: 0; }
+    HTML.mobileLP.cn .wrapper SECTION .download-links IMG.cn-qr-code {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      left: -0.6rem;
+      top: 1rem; } }
+@media only screen and (min-width: 1024px) {
+  HTML.mobileLP .wrapper SECTION.realtime-quotes {
+    padding: 0 13.3rem; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  HTML.mobileLP .wrapper {
+    background: url(../landingPages/mobile_2018/background-768.png) center center; }
+    HTML.mobileLP .wrapper SECTION {
+      align-items: center; }
+      HTML.mobileLP .wrapper SECTION .download-links {
+        margin-top: 2.3rem; }
+        HTML.mobileLP .wrapper SECTION .download-links.apple-img, HTML.mobileLP .wrapper SECTION .download-links.google-img {
+          height: 6.3rem; }
+      HTML.mobileLP .wrapper SECTION.hero H1 {
+        font-size: 4rem;
+        margin-bottom: 2.3rem; }
+      HTML.mobileLP .wrapper SECTION.hero .imgContainer {
+        width: 44.9rem; }
+      HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer {
+        width: 93.7rem; }
+        HTML.mobileLP .wrapper SECTION.realtime-quotes .imgContainer IMG {
+          margin-right: -40rem; }
+      HTML.mobileLP .wrapper SECTION.economic-calendar .imgContainer {
+        width: 47rem;
+        margin-left: -8.4rem; }
+      HTML.mobileLP .wrapper SECTION.breaking-news .imgContainer {
+        width: 37.9rem; }
+      HTML.mobileLP .wrapper SECTION.portfolio .imgContainer {
+        margin: 0; }
+      HTML.mobileLP .wrapper SECTION.hero .text, HTML.mobileLP .wrapper SECTION.economic-calendar .text, HTML.mobileLP .wrapper SECTION.portfolio .text, HTML.mobileLP .wrapper SECTION.realtime-quotes .text, HTML.mobileLP .wrapper SECTION.breaking-news .text {
+        min-width: 32rem;
+        max-width: 45rem; }
+        HTML.mobileLP .wrapper SECTION.hero .text H2, HTML.mobileLP .wrapper SECTION.economic-calendar .text H2, HTML.mobileLP .wrapper SECTION.portfolio .text H2, HTML.mobileLP .wrapper SECTION.realtime-quotes .text H2, HTML.mobileLP .wrapper SECTION.breaking-news .text H2 {
+          font-size: 2.6rem; }
+        HTML.mobileLP .wrapper SECTION.hero .text P, HTML.mobileLP .wrapper SECTION.economic-calendar .text P, HTML.mobileLP .wrapper SECTION.portfolio .text P, HTML.mobileLP .wrapper SECTION.realtime-quotes .text P, HTML.mobileLP .wrapper SECTION.breaking-news .text P {
+          font-size: 1.6rem; } }
+
+/*# sourceMappingURL=mobileLP_2018.css.map */

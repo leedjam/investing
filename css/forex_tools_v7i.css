@@ -1,0 +1,307 @@
+/* January 12nd 2013 - LH */
+
+.subtotal .selectedTd {background-color:#dbecff !important;}
+.greylinediv {border-bottom: 1px solid #D1D1D1;}
+
+/* Profit Calc changed all*/
+form#calc_form {width: 538px;}
+form#calc_form table {width:100%}
+form#calc_form .template_mini_frame_gray_text_1 td {height:42px;}
+form#calc_form div.calc_title {border-top: 3px solid #001b64; line-height:21px;padding-bottom: 1px; padding-left: 9px; width:529px; background-image: none;}
+form#calc_form .calculatorIcon {margin-right: 12px;}
+form#calc_form .template_mini_frame_gray {width:538px !important;}
+form#calc_form input {padding:2px 0 4px 5px;font-size:11px;height:11px;}
+form#calc_form input.input_error{width:180px;}
+form#calc_form input.input_border {width:180px;}
+form#calc_form .input_border {border:1px solid #C1CCD1;}
+form#calc_form select {height:19px; font-size:12px; margin-top:1px; width:187px;}
+form#calc_form select.nowidth {width:68px !important;}
+form#calc_form td.submit {height:16px; padding-top:15px; padding-bottom:24px;}
+form#calc_form td.info {width:175px; padding-left:21px; padding-right:30px;}
+form#calc_form td.total {padding: 20px 10px 9px 21px; height:auto !important;}
+HTML.ae form#calc_form td.total {font-size:16px;}
+form#calc_form .template_mini_frame_gray_text_1 {padding: 13px 15px;}
+form#calc_form label {margin-left: 4px;}
+form#calc_form .buy {margin-right:20px;}
+form#calc_form div.container {margin:0 auto; width: 92px;}
+form#calc_form #calculating {display:none;width: 16px;} 
+form#calc_form .sum {direction:ltr;padding: 20px 0px 9px 0px; height:auto !important;} 
+form#calc_form .template_mini_frame_gray_text{margin-bottom:7px;}
+/* Profit Calc */
+	
+/* Fibonacci Calc */
+form#calc_form .FC_frame{padding: 23px 10px 26px 10px;}
+form#calc_form .FC_trend{width:185px; background-color:#FFF;border-collapse:collapse;}
+HTML.ae form#calc_form .FC_trend {width:255px;}
+form#calc_form .FC_trend td{border:1px solid #bababa;}
+form#calc_form .FC_trend td.title{padding:0px;border-bottom-color:#A2A2A2;border-bottom-width:2px;}
+form#calc_form .FC_trend td.titler{width:100px;}
+HTML.ae form#calc_form .FC_trend td.titler {width:170px;}
+form#calc_form .FC_trend td.titler .info{margin-top:23px;margin-left:9px;} 
+form#calc_form .FC_trend td.titlel{width:81px;border-left:0px !important;padding-top:5px;padding-left:7px;padding-bottom:4px;}
+form#calc_form .FC_trend td.form{height:128px;padding:15px 0 15px 10px;}
+form#calc_form .FC_trend .input_row .legend .blue_font{color:#49a4e6 !important;}
+form#calc_form .FC_trend .input_row .legend .yellow_font{color:#a3a300 !important;}
+form#calc_form .FC_trend .input_row .legend .orange_font{color:#de8b37 !important;}
+form#calc_form .FC_trend .input_row{width:161px;height:22px;margin-bottom:13px;}
+HTML.ae form#calc_form .FC_trend .input_row {width:181px}
+form#calc_form .FC_trend .input_row .legend{margin-top:4px;}
+form#calc_form .FC_trend .input_row .input_border{border-color: #AEB8BD;width:88px;}
+form#calc_form .FC_trend .input_row .input_error{width:88px;}
+form#calc_form .FC_trend .submit{width:110px; padding-top:6px;margin:0 auto;margin-bottom:1px;}
+form#calc_form .FC_curlysign{padding-top:72px;width:35px;text-align:center;}
+form#calc_form .FC_curlysign .CurlyBracketIcon {margin:0 auto;}
+form#calc_form .FC_calc {width:142px;background-color:#FFF;border-collapse:collapse;color:#000;}
+form#calc_form .FC_calc td {border:1px solid #bababa;}
+form#calc_form .FC_calc td.title{padding:0px;padding-left:6px;padding-top:6px;padding-bottom:2px;border-bottom-color:#A2A2A2;height:15px !important;border-bottom-width: 2px;}
+form#calc_form .FC_calc td.presentage{background-color:#f0f0f0;border-width:1px;width:56px; color:#000;line-height:22px;padding-left:7px;}
+form#calc_form .FC_calc td.result{border-right-width:1px;font-size:12px;line-height:22px;padding-left:8px;width:76px;}
+form#calc_form .FCextention{margin-left:14px;}
+/* Fibonacci Calc */
+
+/* CarryTrade calc */
+/*form#calc_form .suptitle {margin-top:26px;width:252px;height:15px;background-color:#FFF;border:1px solid #a7a7a7;border-bottom:0px;text-align:center;}*/
+form#calc_form #subtotal{width:100%;border-collapse:collapse;margin-bottom:14px;margin-top:26px;}
+form#calc_form #subtotal td{border:1px solid #a7a7a7;}
+form#calc_form #subtotal tr.title td{background-color:#efefef;height:25px;vertical-align:middle;border-bottom-width:2px;}
+form#calc_form #subtotal tr.subtotal td{background-color:#fff; height:41px;vertical-align:middle;direction:ltr;}
+form#calc_form #subtotal td.titlebig{width:253px;}
+form#calc_form #subtotal .subtotalbig {width:253px;}
+form#calc_form #subtotal .standart {width:126px;}
+/* CarryTrade calc */
+
+/* Pips calc */
+form#calc_form .pips .info{padding-left:4px;padding-right:10px;width:auto;}
+form#calc_form .pips .input_border{width:126px;margin:0 10px;}
+form#calc_form .pips .input_error{width:126px;margin:0 10px;}
+form#calc_form .pips #total{border-top: 1px solid #FDFDFD;}
+form#calc_form #results{width:100%;border-collapse:collapse;margin-bottom:14px;margin-top:26px;border:1px solid #a7a7a7;}
+form#calc_form .pips #results td{border-right:1px solid #a7a7a7;border-bottom:1px solid #cbcbcb;text-align:left;background-color:#fff;vertical-align:middle;}
+form#calc_form .pips #results tr.title td{background-color:#efefef;height:37px;vertical-align:top;border-bottom:2px solid #a2a2a2;padding-top:4px;padding-left:8px;padding-bottom:5px;}
+form#calc_form .pips #results tr.subrow td{border-bottom:0px;}
+form#calc_form .pips #results tr.subtotal td{height:22px;padding-left:8px;}
+form#calc_form .pips #results .num{text-align:right;padding-right:9px;}
+form#calc_form .pips #results .titley{background-color:#efedd0 !important;}
+form#calc_form .pips #results .subtotaly{background-color:#fffdde !important; border-right:0px;}
+form#calc_form .pips #results .currency{width:70px}
+form#calc_form .pips #results .price{width:55px}
+form#calc_form .pips #results .standard{width:82px}
+form#calc_form .pips #results .mini{width:83px}
+form#calc_form .pips #results .micro{width:83px}
+form#calc_form .pips #results .value{width:84px}
+/* Pips calc */
+
+/* Currency Converter */
+form#calc_form .currency_converter {width:100% !important;margin:0 auto; padding-top:11px;}
+form#calc_form .currency_converter td{height:0px;}
+form#calc_form .currency_converter .input_border{width:143px;}
+form#calc_form .currency_converter .input_error {width:143px;}
+form#calc_form .currency_converter select.input_border{width:150px;}
+form#calc_form .currency_converter .info{padding: 0 10px;}
+form#calc_form .currency_converter td.info{width:0px;}
+form#calc_form .currency_converter #total{padding-top:30px;padding-bottom:31px;}
+form#calc_form .currency_converter td.submit{padding-bottom:23px;padding-top:3px;}
+form#calc_form .currency_converter #second_currency_loading_div{display:none;}
+form#calc_form .currency_converter .textTd{padding-bottom:18px;}
+/* Currency Converter */
+
+/* Forex Heatmap */
+.fhm_timeTitle {margin-bottom: 16px; margin-left:6px;}
+.fhm_timeDate{margin-bottom: 16px; margin-top:2px;}
+.heatmapT {margin-bottom:23px; width:100%; border:1px solid #a6a6a6; border-collapse: collapse; border-spacing:0;}
+.heatmapT TH {width:69px; height:23px; border:1px solid #dadada; border-bottom:2px solid #dadada; text-align:center;}
+.heatmapT TH:first-child {width:53px !important;}
+.heatmapT TD {width:53px; height:20px; border:1px solid #dadada; text-align:center;}
+.heatmapT .heatmapInner {width:100%; border:1px solid #f5f5f5; border-collapse: collapse; border-spacing:0;}
+.heatmapInner TD {width:69px;height:20px;border:1px solid #fff;}
+.legend {margin-bottom:10px;}
+.legendBlock {margin-right:10px;}
+.fhm_infobox {margin-bottom:8px;}
+.fhm_infobox .colorBox {width:12px; height:12px; margin:1px 10px 2px 0; display:inline-block;}
+/* Forex Heatmap */
+
+/* Pivot Calculator */
+.pivot td.info{width:54px !important;padding-left:4px !important;}
+.pivot #results{width:auto !important;}
+.pivot #results tr.title td{height:auto !important;}
+.pivot #results .firstCol{padding-right:20px;min-width:85px;}
+.pivot #results .infoCol{width:87px;text-align:right !important;padding-right:8px;}
+.pivot #results .titleInfoCol{width:98px;}
+.pivot #results .disabled{background-image:url('../pivotcalcbg.gif');}
+/* Pivot Calculator */
+
+/* Correlation Calculator */
+.correlSubmit{height: 16px;padding-bottom: 33px;padding-top: 15px;}
+#correlation-results .hr{border-top:1px solid #D1D1D1;border-bottom:1px solid #FFFFF;}
+#correlation-results .total{overflow:hidden;}
+#correlation-results .info{margin-top:17px;}
+#correlation-results #subtotal{width:181px;margin-top:6px !important;}
+#correlation-results #subtotal td.checkbox{width:33px;}
+#correlation-results #subtotal td.pairlist{width:82px;}
+#correlation-results #subtotal td.correl{width:65px;}
+#correlation-results #subtotal tr.subtotal td{height:29px !important;}
+#correlation-results .mainGraphTitle{margin-top:29px;margin-bottom:8px;}
+#correlation-results .mainGraph .graph{width:311px; border:1px solid #b9b9b9;margin-bottom:30px;}
+#correlation-results .graph .title{height:27px; background-color:#efefef;border-bottom:1px solid #999999;line-height:27px;padding:0 7px;}
+#correlation-results .graph .title .caption{display:inline;margin:0 3px;}
+#correlation-results .graph .graphImage{height:139px; background:url('../ajax-loader-small.gif') center center no-repeat #FFFFFF;}
+#correlation-results .subGraphTitle{margin-top:33px;margin-bottom:10px;}
+/* Correlation Calculator */
+
+
+
+/* Volatility Calculator */
+
+#volatilityTable {margin-top:30px; border-bottom:1px solid #d1d1d1;overflow:hidden;}
+.volatilitySeperator {float:left; margin:0 7px;}
+#volatilityTable #subtotal{width:245px !important; margin-top:6px !important; margin-bottom:30px !important; float:left;}
+#volatilityTable #subtotal td.checkbox{width:31px;}
+#volatilityTable #subtotal td.pairlist{width:82px;}
+#volatilityTable #subtotal td.pips{width:66px;}
+#volatilityTable #subtotal td.percentage{width:64px;}
+#volatilityTable #subtotal tr.subtotal td{height:27px !important;}
+#volatilityTable #subtotal .title td{padding-left:10px;}
+.volatilityForm input.input_border {width:50px !important;}
+.volatilityForm input.input_error {width:50px !important;}
+#volatilityCharts {margin-top:15px;}
+#volatilityDailyChart {margin-bottom:75px;}
+#volatilityHourlyChart {margin-bottom:46px;}
+#volatilityWeekdayChart {margin-bottom:23px;}
+
+.volatilityChartsHeader {width:282px; margin-bottom:20px;}
+.volatilityChartsTime {width:224px; padding-top:3px; margin-bottom:20px;}
+HTML.ae .volatilityChartsHeader {width:auto;}
+
+#volatilityCharts .graphImage{height:177px; background:url('../ajax-loader-small.gif') center center no-repeat;}
+#WeeklyGraph {height:161px !important;}
+.volatilityTimeframes {padding-top:12px; padding-right:5px;}
+#timeframeLinks {padding-top:9px;}
+#timeframeLinks li {display:inline; cursor:pointer; border-radius: 8px; height: 22px;}
+#timeframeLinks li span  {width:33px;}
+#timeframeLinks li span.selected {background-color:#86a3bf; border-radius:12px; height:19px; padding-top:3px;}
+#volatilityWeekDays {direction:ltr;display: hide;position: absolute;z-index: 9999; margin:5px 0 0 72px;}
+#volatilityWeekDays li {display:block;float:left; width:97px; text-align:center;}
+
+/* Button's Sprite on MainCSS (newBtnSpecial) */
+.NewBtnVolatilityCalculatorleft{background-repeat:no-repeat;padding:6px 1px 5px 5px;margin:0px 0px 0px 0px;font-size:11px;}
+.NewBtnVolatilityCalculatorCenter{background-repeat:repeat-x;padding:6px 4px 5px;font-size:11px;}
+.NewBtnVolatilityCalculatorright{background-repeat:no-repeat;padding:8px 5px 5px;margin:0px 0px 0px 0px;font-size:11px;}
+.NewBtnVolatilityCalculatorColor{color:#fff;}
+
+.leftNewBtnVolatilityCalculatorBlue{background-position:left -942px;}
+.centerNewBtnVolatilityCalculatorBlue{background-position:0px -969px;}
+.rightNewBtnVolatilityCalculatorBlue{background-position:left -994px;}
+
+/* Volatility Calculator */
+
+
+
+
+/****** Market Hours ******/
+#marketHoursHeader {width:625px; height:14px; padding: 4px 10px 6px 7px; background-color:#ebebeb;}
+#marketHoursDivider {height:1px; background-color:#ebebeb;}
+.blueTimeMarker {width:25px; height:324px; position:absolute; top:1px; background-color:#4880a5; z-index:1; filter:alpha(opacity=70); opacity:.70; }
+
+/* Market Hours Maps */
+.mapWrapper {width:625px; background-color:#f2f2f2; padding:5px 6px 5px 5px; margin:9px 0 13px;}
+.marketHoursMapDiv{width:625px;}
+.marketHoursMapBox {width:625px; margin-top:17px; margin-bottom:14px;}
+.marketHoursMap {width:625px;height:326px;background-image:URL('../marketHours/Market-Hours-MapNew.png');background-repeat:no-repeat;position:relative;border-top:1px solid #57646c;}
+
+/* Market Hours Legend */
+.marketHoursMapLegend {padding-bottom:13px;}
+.marketHoursMapDetails {width:636px;}
+.marketHoursMapDetails DIV:first-child {width:286px;}
+
+.marketHoursMapOverlaps {width:231px; padding-bottom:13px;}
+.marketHoursMapOverlaps P {height:18px; padding-top:4px;}
+.marketHoursMapOverlaps DIV {height:18px; padding-bottom:4px;}
+.marketHoursMapOverlaps P.last {height:18px; padding-top:16px;}
+.marketHoursMapOverlapsLastRow {padding-top:4px; padding-left:9px;}
+#overlappingMap2 {height:82px;overflow:hidden;}
+
+div.marketHoursMapDetails {margin-top:10px;}
+.marketHoursMapLegendClockIcon {margin-left:14px;}
+
+.marketHoursMapLegend DIV:first-child {margin:0px 0px 12px;}
+.marketHoursMapLegend SPAN:first-child {margin:0px 9px 0px 0; padding:0px 5px 1px 6px; -moz-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;}
+.marketHoursMapLegend DIV {margin-bottom:10px;}
+
+/* Legends Color */
+.legendCube1 {background-color:#d1e1ff; border:1px solid #606f8a;}
+.legendCube2 {background-color:#faf9ac; border:1px solid #7b7900;}
+.legendCube3 {background-color:#ffe3e9; border:1px solid #92636e;}
+.legendCube4 {background-color:#cbfac8; border:1px solid #60845e;}
+.legendCube5 {background-color:#ffe4d1; border:1px solid #847163;}
+.legendCube6 {background-color:#ececec; border:1px solid #707070;}
+.legendCube7 {background-color:#d9fbff; border:1px solid #538287;}
+.legendCube8 {background-color:#f4d9ff; border:1px solid #7e6886;}
+
+
+
+/* Market Hours Cities Bars Map1 */
+#marketHoursBar1Map1 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar2Map1 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar3Map1 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar4LeftMap1 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar4RightMap1 {position:absolute;height:22px;z-index:3;}
+
+/* Market Hours Cities Bars Map2 */
+#marketHoursBar1Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar2Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar3Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar4Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar5Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar6Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar7Map2 {position:absolute;height:22px;z-index:3;}
+#marketHoursBar8Map2 {position:absolute;height:22px;z-index:3;}
+
+/* Market Hours Bars Sprint */
+.marketHoursMap DIV DIV {-moz-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; height:17px; display:inline; padding-top:3px; text-align:center; font-weight:bold;}
+.marketHoursMap DIV DIV.split1 {-moz-border-radius:4px 0px 0px 4px; -ms-border-radius:4px 0px 0px 4px; -o-border-radius:4px 0px 0px 4px; -webkit-border-radius:4px 0px 0px 4px; border-radius:4px 0px 0px 4px;}
+.marketHoursMap DIV DIV.split2 {-moz-border-radius:0px 4px 4px 0px; -ms-border-radius:0px 4px 4px 0px; -o-border-radius:0px 4px 4px 0px; -webkit-border-radius:0px 4px 4px 0px; border-radius:0px 4px 4px 0px;}
+
+.marketHoursMapBarsCenter{}
+
+.centerMarketHoursMap1Bars1{background-color:#d1e1ff; border:1px solid #606f8a;}
+
+.centerMarketHoursMap1Bars2{background-color:#faf9ac; border:1px solid #949322;}
+
+.centerMarketHoursMap1Bars3{background-color:#ffe3e9; border:1px solid #a87d87;}
+
+.centerMarketHoursMap1Bars4{background-color:#cbfac8; border:1px solid #718e6f;}
+
+.centerMarketHoursMap2Bars1{background-color:#d1e1ff; border:1px solid #7d997b;}
+
+.centerMarketHoursMap2Bars2{background-color:#faf9ac; border:1px solid #949322;}
+
+.centerMarketHoursMap2Bars3{background-color:#ffe3e9; border:1px solid #a87d87;}
+
+.centerMarketHoursMap2Bars4{background-color:#cbfac8; border:1px solid #7d997b;}
+
+.centerMarketHoursMap2Bars5{background-color:#FFE4D1; border:1px solid #847163;}
+
+.centerMarketHoursMap2Bars6{background-color:#ECECEC; border:1px solid #707070;}
+
+.centerMarketHoursMap2Bars7{background-color:#D9FBFF; border:1px solid #538287;}
+
+.centerMarketHoursMap2Bars8{background-color:#d1e1ff; border:1px solid #606f8a;}
+
+/* Market Hours Cities Bars Map1 */
+#marketHoursBar1Map1 {top:67px;}
+#marketHoursBar2Map1 {top:91px;}
+#marketHoursBar3Map1 {top:115px;left:391px;}
+#marketHoursBar4LeftMap1 {top:211px;left:0px;}
+#marketHoursBar4RightMap1 {top:211px;left:443px;}
+
+/* Market Hours Cities Bars Map1 Width */
+.centerMarketHoursMap1Bars1{width:231px;}
+.centerMarketHoursMap1Bars2{width:231px;}
+.centerMarketHoursMap1Bars3{width:231px;}
+.centerMarketHoursMap1Bars4Left{width:50px;}
+.centerMarketHoursMap1Bars4Right{width:180px;}
+
+.marketHoursTime DIV {width:25px; height:15px; padding-top:2px; padding-bottom:1px; float:left; background-color:#fff; border-right:1px solid #8D8D8D; border-top:1px solid #8D8D8D; text-align:center; font-weight:bold;}
+.marketHoursTime DIV:first-child{border-left:1px solid #8D8D8D;}
+.marketHoursTime DIV.selectedTime {background-color:#73B1D5; color:#ffffff;}
+/****** End Market Hours ******/

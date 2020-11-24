@@ -1,0 +1,10 @@
+.cryptoIcon{width: 20px; height: 20px; background-image: url('v_260146_cryptoIcon10.png'); background-repeat: no-repeat;display: inline-block;background-position: 0 0; }
+.c_bitcoin { background-position: -0px -20px; }
+.c_ethereum { background-position: -0px -40px; }
+.c_tether { background-position: -0px -60px; }
+.c_xrp { background-position: -0px -80px; }
+.c_chainlink { background-position: -0px -100px; }
+.c_litecoin { background-position: -0px -120px; }
+.c_bitcoin-cash { background-position: -0px -140px; }
+.c_binance-coin { background-position: -0px -160px; }
+.c_cardano { background-position: -0px -180px; }

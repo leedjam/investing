@@ -1,0 +1,1057 @@
+	<!DOCTYPE HTML>
+	<html dir="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hans" xmlns:schema="http://schema.org/" class="cn mobileLP" lang="zh-Hans">
+
+	<head>
+    
+<script src="../consent/tcf.stub.js" type="text/javascript" ></script>
+<script src="../scripttemplates/otSDKStub.js" type="text/javascript" data-domain-script="265d5ac2-7d0c-4675-bf4d-421a61fb482e"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+
+    // temp for checks
+    </script>
+<style>
+	.ot-floating-button {
+		z-index:12 !important;
+	}
+</style>
+
+    <script src="../js/jquery-6.4.9.04.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+    <script type="text/javascript">
+        window.helpers = {
+            'getCookie': function (k){var v="; "+document.cookie;var p=v.split("; "+k+"=");if(p.length===2)return p.pop().split(";").shift();else return null},
+            'setCookie': function (k,v,d){var e='';if(typeof d!=='undefined'){var n=new Date;n.setTime(n.getTime()+864e5*d);e+=';expires="';e+=n.toGMTString();e+='"';}document.cookie=k+'='+v+';path=/' + e},
+            'delCookie': function (k){document.cookie=k+'=;path=/;expires=-1'},
+            'isNumber': function (n){return !isNaN(n)&&typeof n!==undefined&&n!==null&&n!==''},
+            'removeClass': function (e,c){if(document.documentElement.classList){e.classList.remove(c);}else{var r=new RegExp('(^|\\s)'+c+'(\\s|$)', 'g');e.className=e.className.replace(r, c)}},
+            'addClass': function (e,c){if(document.documentElement.classList){e.classList.add(c);}else{if(e.className.indexOf(c)<0){if((e.className!==''&&e.className.charAt[e.className.length-1]===' ')||e.className===''){e.className+=c}else{e.className+=' '+c}}}},
+            'hasClass': function (e,c){if(document.documentElement.classList){e.classList.contains(c);}else{return e.className.indexOf(c)>=0}},
+        };
+    </script>
+    <script src="../js/n/toolset-1.19.min.js"></script>
+    
+        <script src="../js/logger-1.02.min.js"></script>
+
+        
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/">
+<script async="" src="../tag/js/gpt.js"></script>
+<script type="text/javascript">
+	window.googletag = window.googletag || {};
+	window.googletag.cmd = window.googletag.cmd || [];
+	window.loadSideBlockAd3 = function () {
+		googletag.cmd.push(function () {
+			_.defineSlot({"platform":"desktop","sizes":[[300,250],[300,600]],"adSlotDivID":"div-gpt-ad-1370187203350-sb3","adUnitDivAttributes":{"advertisementText":"\u5e7f\u544a"},"print":false,"preBid":false,"excludedSections":["ccpa"]});
+            googletag.display('div-gpt-ad-1370187203350-sb3');
+
+                            _addAdvertisementText('div-gpt-ad-1370187203350-sb3', '广告');
+            
+		});
+	};
+	console.log('### - Prebid is off');
+</script>
+
+    <script type="text/javascript">
+        window.a892ffe2982c = {
+			defineSlots: function () {
+				var googletagGA = window.helpers.getCookie('_ga');
+				var screenWidthForAds= document.body.offsetWidth,
+					screenWidthValue,
+					adBreakPoints = [1336,1440,1920];
+
+				if (googletagGA) {
+					window.googletag.pubads().setTargeting('CID', googletagGA.substr(6));
+				}
+				if (screenWidthForAds < adBreakPoints[0]){ screenWidthValue = 'small' }
+				else if (screenWidthForAds >= adBreakPoints[0] && screenWidthForAds <= adBreakPoints[1]) {
+					screenWidthValue = 'medium'
+				}
+				else if (screenWidthForAds > adBreakPoints[1]) {
+					screenWidthValue = 'big'
+				}
+
+				_.attachEvents();
+				_.each({"Section":"mobile","Sub_Section":"","Charts_Page":"no","Page_URL":"\/mobile\/","Domain":"cn.investing.com","smd":"1vmodgp57gv34c2budt4bokqus","edition_id":"6","Traffic_Type":"OG","User_type":"Not_Logged_in","prebid_session":"0","prebid_page":"0"}, function (val, key) { _.setTargeting(key, val) });
+				_.setTargeting('screen_width', screenWidthValue);  // send browser width - REVOP-329
+				_.each([], _.defineSlot);
+			},
+            isPrebid: false
+		}
+    </script>
+<script type="text/javascript">
+    window.googletag.cmd.push(function () {
+        let isGdpr 			= 0;
+		let isCcpaStates 	= 0
+		window.a892ffe2982c.defineSlots();
+        //if is not gdpr compliant - get personal ads
+        if (!isGdpr || (isGdpr && getCookie('CMP_CONSENT') === '1')) {
+            window.googletag.pubads().setRequestNonPersonalizedAds(0);
+        }
+
+        // ADX ccpa (optout - 1YYN) restricted data processing
+        if( isCcpaStates && getCookie('usprivacy') === '1YYN')
+        {
+            console.log('CCPA privacy restrict data processing');
+            window.googletag.pubads().setPrivacySettings({
+                'restrictDataProcessing': true
+            });
+		}
+        window.googletag.pubads().enableSingleRequest();
+        window.googletag.enableServices();
+    })
+
+    function _addAdvertisementText(elementKey, text) {
+        let dfpElement = document.getElementById(elementKey);
+        if (dfpElement) {
+            let advertisementDiv = _.createAdvertisementPrefix(text);
+            dfpElement.parentElement.prepend(advertisementDiv);
+        }
+    }
+
+</script>
+
+
+
+
+
+<title>英为财情Investing官方APP下载，外汇、股票、指数、期货行情与财经资讯</title>
+        
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	    <!--            <link rel="alternate" hreflang="--><!--" href="--><!--"  />-->
+<!--        --><!--        <link rel="alternate" hreflang="--><!--" href="--><!--"  />-->
+<!--        -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="zh-cn">
+<meta name="description" content="英为财情Investing，带你投资全球！下载全球第四财经网站官方APP, 免费获取全球数十万种外汇、股票、指数、期货行情与财经资讯。">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="baidu_ssp_verify" content="867e13c8aeefe44c96c098634fb27ffe"><meta name="baidu-site-verification" content="2HFUVwyWx8">
+	
+        <meta name="sogou_site_verification" content="EjbGId1iE9">
+        <meta name="360-site-verification" content="719487870293f8986e18316183ca4af2">
+        <meta name="shenma-site-verification" content="fae74e8872a84f59ef059de483b5817b_1519293915"> 
+    <meta property="og:title" content="英为财情Investing官方APP下载，外汇、股票、指数、期货行情与财经资讯"> 
+<meta property="og:description" content="英为财情Investing，带你投资全球！下载全球第四财经网站官方APP, 免费获取全球数十万种外汇、股票、指数、期货行情与财经资讯。"> 
+<meta property="og:type" content="website"> 
+<meta property="og:url" content="https://cn.investing.com/mobile/"> 
+<meta property="og:image" content="https://i-invdn-com.akamaized.net/redesign/images/seo/v2/investing_300X300.png"> 
+<meta property="og:site_name" content="Investing.com 中文"> 
+<meta property="og:locale" content="zh_CN"> 
+    <meta name="google-site-verification" content="DTRxWXB3vjNUsTCPICWo9yzZmIllylXYkRevEXo7szg">
+
+	<link rel="canonical" href="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="英为财情Investing官方APP下载，外汇、股票、指数、期货行情与财经资讯">
+    <meta name="twitter:description" content="英为财情Investing，带你投资全球！下载全球第四财经网站官方APP, 免费获取全球数十万种外汇、股票、指数、期货行情与财经资讯。">
+
+    <meta name="twitter:app:name:googleplay" content="Investing.com 外汇股票资讯通">
+    <meta name="twitter:app:id:googleplay" content="com.fusionmedia.investing">
+    <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.fusionmedia.investing&hl=">
+
+    <meta name="twitter:app:name:iphone" content="Financial Markets - Stocks, Forex, Futures & News">
+    <meta name="twitter:app:id:iphone" content="909998122">
+    <!--meta name="twitter:app:url:iphone"         content="%App-URL-Per-Country%-->
+
+
+<!-- css -->
+            <link rel="stylesheet" href="../css/mainOldMin_v3b.css" type="text/css">
+                          <link rel="stylesheet" href="../css/newMainCssCnMin_v76h.css" type="text/css">
+                    <link href="../css-NotoSansSC400700_chinese-sim.css" rel="stylesheet">
+
+
+    <link href="../css/printContent_v10.css" media="print" rel="stylesheet" type="text/css">
+
+
+<!-- css -->
+
+<!-- js -->
+<script type="text/javascript">
+var domainId = "6";
+window.CDN_URL = "https://i-cncdn.investing.com";
+</script>
+
+<script type="text/javascript" src="../js/n/notifications-1.02.min.js"></script>
+<script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
+<script type="text/javascript" src="../js/n/utils-0.16.min.js"></script>
+<script type="text/javascript" src="../js/main-1.17.265.min.js"></script>
+<!-- Forces IE6,IE7 to understand PSEUDO CLASSES :after and :before (add before: " "; after: " "; to CSS) -->
+<!--[if (gte IE 6)&(lte IE 7)]>
+<script src="https://i-cncdn.investing.com/js/jquery.pseudo-1.1.min.js"></script>
+<![endif]-->
+<!--Global variables for JavaScript-->
+<script type="text/javascript">
+    window.login_url = '/members-admin/login';
+        window.close_word = '结束';
+    window.lightbox_image = '图象';
+    window.lightbox_from = '发件人';
+        var FP = {
+        global  : {
+            _defaultDomain  : 'cn.investing.com',
+            _textAlign      : 'left'
+        }
+    };
+    var userType;
+    var userSupportedType ;
+</script>
+<!--Global variables for JavaScript-->
+<!-- js -->
+
+
+<script type="text/javascript">
+    /* Modernizr 2.0.6 (Custom Build) | MIT & BSD
+     * Build: http://www.modernizr.com/download/#-csstransitions-iepp-cssclasses-testprop-testallprops-domprefixes
+     */
+    window.Modernizr=function(a,b,c){function A(a,b){var c=a.charAt(0).toUpperCase()+a.substr(1),d=(a+" "+n.join(c+" ")+c).split(" ");return z(d,b)}function z(a,b){for(var d in a)if(k[a[d]]!==c)return b=="pfx"?a[d]:!0;return!1}function y(a,b){return!!~(""+a).indexOf(b)}function x(a,b){return typeof a===b}function w(a,b){return v(prefixes.join(a+";")+(b||""))}function v(a){k.cssText=a}var d="2.0.6",e={},f=!0,g=b.documentElement,h=b.head||b.getElementsByTagName("head")[0],i="modernizr",j=b.createElement(i),k=j.style,l,m=Object.prototype.toString,n="Webkit Moz O ms Khtml".split(" "),o={},p={},q={},r=[],s,t={}.hasOwnProperty,u;!x(t,c)&&!x(t.call,c)?u=function(a,b){return t.call(a,b)}:u=function(a,b){return b in a&&x(a.constructor.prototype[b],c)},o.csstransitions=function(){return A("transitionProperty")};for(var B in o)u(o,B)&&(s=B.toLowerCase(),e[s]=o[B](),r.push((e[s]?"":"no-")+s));v(""),j=l=null,a.attachEvent&&function(){var a=b.createElement("div");a.innerHTML="<elem></elem>";return a.childNodes.length!==1}()&&function(a,b){function s(a){var b=-1;while(++b<g)a.createElement(f[b])}a.iepp=a.iepp||{};var d=a.iepp,e=d.html5elements||"abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",f=e.split("|"),g=f.length,h=new RegExp("(^|\\s)("+e+")","gi"),i=new RegExp("<(/*)("+e+")","gi"),j=/^\s*[\{\}]\s*$/,k=new RegExp("(^|[^\\n]*?\\s)("+e+")([^\\n]*)({[\\n\\w\\W]*?})","gi"),l=b.createDocumentFragment(),m=b.documentElement,n=m.firstChild,o=b.createElement("body"),p=b.createElement("style"),q=/print|all/,r;d.getCSS=function(a,b){if(a+""===c)return"";var e=-1,f=a.length,g,h=[];while(++e<f){g=a[e];if(g.disabled)continue;b=g.media||b,q.test(b)&&h.push(d.getCSS(g.imports,b),g.cssText),b="all"}return h.join("")},d.parseCSS=function(a){var b=[],c;while((c=k.exec(a))!=null)b.push(((j.exec(c[1])?"\n":c[1])+c[2]+c[3]).replace(h,"$1.iepp_$2")+c[4]);return b.join("\n")},d.writeHTML=function(){var a=-1;r=r||b.body;while(++a<g){var c=b.getElementsByTagName(f[a]),d=c.length,e=-1;while(++e<d)c[e].className.indexOf("iepp_")<0&&(c[e].className+=" iepp_"+f[a])}l.appendChild(r),m.appendChild(o),o.className=r.className,o.id=r.id,o.innerHTML=r.innerHTML.replace(i,"<$1font")},d._beforePrint=function(){p.styleSheet.cssText=d.parseCSS(d.getCSS(b.styleSheets,"all")),d.writeHTML()},d.restoreHTML=function(){o.innerHTML="",m.removeChild(o),m.appendChild(r)},d._afterPrint=function(){d.restoreHTML(),p.styleSheet.cssText=""},s(b),s(l);d.disablePP||(n.insertBefore(p,n.firstChild),p.media="print",p.className="iepp-printshim",a.attachEvent("onbeforeprint",d._beforePrint),a.attachEvent("onafterprint",d._afterPrint))}(a,b),e._version=d,e._domPrefixes=n,e.testProp=function(a){return z([a])},e.testAllProps=A,g.className=g.className.replace(/\bno-js\b/,"")+(f?" js "+r.join(" "):"");return e}(this,this.document);
+    window.ie = (function(){var undef,v = 3,div = document.createElement('div'),all = div.getElementsByTagName('i');while (div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',all[0]);return v > 4 ? v : undef;}());
+</script>
+
+<!-- TEMP -->
+
+<style>
+    .googleContentRec {display:inline-block;width:650px;height:300px;}
+
+</style>
+
+<style>
+        /* INPUTS OVERWRITES */
+    .combineSearchBox {border:1px solid #737373;} /* overwrite main css */
+    .combineSearchBox.newInput.inputTextBox, .portfolioSearch .newInput.inputTextBox  {padding:0;}
+</style>
+
+<!--[if (IE 8)|(IE 9)]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie8-9main_v2b.css">
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie8main_v2a.css">
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie7main_v1i.css">
+<![endif]-->
+
+
+<style>
+    .MainTableDirectory .HeadTitlesRow TH {text-align:center; font-weight:bold;}
+</style>
+
+<style>
+    .openTbl TH.icon {text-align:center;}     .openTbl TH.icon SPAN {position:relative; top:2px;}
+</style>
+<script>
+    var oldIE = false, explorerEight = false ,explorerNine = false, sponsoredArticle;
+</script>
+<!--[if lte IE 7]>
+<script>
+    oldIE = true;
+</script>
+<![endif]-->
+<!--[if (IE 8)]>
+<script>
+    explorerEight = true;
+</script>
+<![endif]-->
+<!--[if (IE 9)]>
+<script>
+    explorerNine = true;
+</script>
+<![endif]-->
+
+<script>var ce160d975985a857728c6493853bf934="dfb6e46d039ce6195e86615606f89d0e";</script>
+<script data-obct="" type="text/javascript">
+    /** DO NOT MODIFY THIS CODE**/
+    !function(_window, _document) {
+        var OB_ADV_ID='00d807ecaf50797b1d395f73b69546fffe';
+        if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
+        var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
+    obApi('track', 'PAGE_VIEW');
+</script><script>
+    (function(){
+        var canonicalURL, curProtocol;
+        //Get the <link> tag
+        var x=document.getElementsByTagName("link");
+        //Find the last canonical URL
+        if(x.length > 0){
+        for (i=0;i<x.length;i++){
+        if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+                    canonicalURL=x[i].href;
+                }
+            }
+        }
+        //Get protocol
+        if (!canonicalURL){
+            curProtocol = window.location.protocol.split(':')[0];
+        }
+        else{
+            curProtocol = canonicalURL.split(':')[0];
+        }
+        //Get current URL if the canonical URL does not exist
+        if (!canonicalURL) canonicalURL = window.location.href;
+        //Assign script content. Replace current URL with the canonical URL
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+</script>
+<script></script></head>
+	<body>
+
+	<!-- topBar -->
+<div class="topBar">
+	<div class="topBarInnerWrapper">
+					<a href="../index.html" class="topBarLogo">
+									<img src="../logos/investing-com-CN-logo_v1.png" alt="Investing.com - 领先金融门户" class="investingLogo">
+							</a>
+					<div id="topBarPopup" load="topBarSpinner"></div>
+		<div class="js-search-overlay topSearchOverlay displayNone"></div>
+<div class="searchDiv newSearchDiv js-main-search-wrapper">
+	<div class="searchBoxContainer topBarSearch topBarInputSelected">
+	    <input autocomplete='off' type="text" class="searchText arial_12 lightgrayFont js-main-search-bar" value="" placeholder="在全站搜索...">
+		<label class="searchGlassIcon js-magnifying-glass-icon">&nbsp;</label>
+		<i class="cssSpinner"></i>
+	</div>
+
+    <div class="js-results-dialog displayNone">
+        <div class="js-query-results newSearch_topBar newSearch_topBarResults displayNone">
+	        <div class="searchMain">
+		        <div class="js-query-quotes-header textBox groupHeader searchPopup_results">
+			        <a class="js-quote-header-link">行情</a>
+			        <div class="js-quote-types-dropdown newSearchSelect selectWrap">
+				        <a class="newBtnDropdown noHover">
+                            <span class="js-dropdown-text-input inputDropDown">所有品种类型</span>
+					        <i class="bottunImageDoubleArrow buttonWhiteImageDownArrow"></i>
+				        </a>
+
+			            <ul class="dropdownBtnList displayNone js-quote-types-dropdown-ul">
+			            <li data-value='all'>所有品种类型</li><li data-value='indice'>指数</li><li data-value='equities'>证券</li><li data-value='etf'>交易所交易基金</li><li data-value='fund'>基金</li><li data-value='commodity'>期货</li><li data-value='currency'>货币</li><li data-value='crypto'>加密货币</li><li data-value='bond'>国债</li><li data-value='certificate'>票据</li>			            </ul>
+			        </div>
+		        </div>
+
+		        <div class="js-scrollable-results-wrapper newResultsContainer">
+			        <div class="js-table-results tableWrapper"></div>
+		        </div>
+
+	            <!-- NO RESULTS -->
+	            <div class="js-query-no-results noResults displayNone">
+	                <i class="searchNoResultsNew"></i>
+	                <p class="lighterGrayFont">您的搜索无结果</p>
+	            </div>
+
+	            <div class="searchResultsFooter">
+		            <i class="blueSearchGlassIcon middle"></i>
+		            <a class="js-footer-link" href="../index.html">全站搜索:&nbsp;<span class="js-footer-link-text bold"></span></a>
+	            </div>
+	        </div>
+	        <div class="js-right-side-results searchAside"></div>
+        </div>
+
+        <div class="js-default-search-results newSearch_topBar">
+	        <div class="searchMain js-main-group-results"></div>
+	        <div class="searchAside">
+		        <div class="searchAside_item">
+
+			        <a class="asideTitle" href="../news/most-popular-news.html">
+				        <div class="js-search-ga-header groupHeader" ga-label="Popular News">热门新闻</div>
+				        <span class="js-search-ga-more" ga-label="Popular News - More">更多</span>
+			        </a>
+			        <div class="js-search-ga-items articles mediumTitle1" ga-label="Popular News - Article"><article class="js-article-item articleItem   " data-id="1981891">
+	<a href="../news/stock-market-news/article-1981891.html" class="img"><img class="lazyload" data-src="../news/LYNXNPEC4317M_S.jpg" alt="美股早知道：机构看涨特斯拉至1000美元！小鹏隔夜飙升34%" onerror="javascript:this.src='https://i-cncdn.investing.com/news/news-paper_108x81.png';"></a>	<div class="textDiv">
+							<a href="../news/stock-market-news/article-1981891.html" title="美股早知道：机构看涨特斯拉至1000美元！小鹏隔夜飙升34%" class="title">美股早知道：机构看涨特斯拉至1000美元！小鹏隔夜飙升34%</a>
+	                			</div>
+	<div class="clear"></div>
+</article><article class="js-article-item articleItem   " data-id="1981739">
+	<a href="../news/stock-market-news/article-1981739.html" class="img"><img class="lazyload" data-src="../news/LYNXMPEA8F0YY_S.jpg" alt="美股盘前：道指期货涨超150点 高盛预计缩水版刺激计划可能要来了" onerror="javascript:this.src='https://i-cncdn.investing.com/news/news-paper_108x81.png';"></a>	<div class="textDiv">
+							<a href="../news/stock-market-news/article-1981739.html" title="美股盘前：道指期货涨超150点 高盛预计缩水版刺激计划可能要来了" class="title">美股盘前：道指期货涨超150点 高盛预计缩水版刺激计划可能要来了</a>
+	                			</div>
+	<div class="clear"></div>
+</article><article class="js-article-item articleItem   " data-id="1981870">
+	<a href="../news/stock-market-news/article-1981870.html" class="img"><img class="lazyload" data-src="../news/LYNXNPEF1P0T6_S.jpg" alt="【环球市场】“疫苗交易模式”再现 马斯克晋升全球第二大富豪" onerror="javascript:this.src='https://i-cncdn.investing.com/news/news-paper_108x81.png';"></a>	<div class="textDiv">
+							<a href="../news/stock-market-news/article-1981870.html" title="【环球市场】“疫苗交易模式”再现 马斯克晋升全球第二大富豪" class="title">【环球市场】“疫苗交易模式”再现 马斯克晋升全球第二大富豪</a>
+	                			</div>
+	<div class="clear"></div>
+</article></div>
+		        </div>
+						        <div class="searchAside_item js-popular-analysis-wrapper">
+
+			        <a class="asideTitle" href="../analysis/most-popular-analysis.html">
+				        <div class="js-search-ga-header groupHeader" ga-label="Popular Analysis">热门分析</div>
+				        <span class="js-search-ga-more" ga-label="Popular Analysis - More">更多</span>
+			        </a>
+			        <div class="js-search-ga-items articles smallTitle1 analysisImg js-popular-analysis-items" ga-label="Popular Analysis - Article"><article class="js-article-item articleItem   " data-id="200458745">
+	<a href="../analysis/article-200458745.html" class="img"><img class="lazyload" data-src="../company_logo/7ea77cba6ce1d7aeeaf4b8993b1ac844.jpg" onerror="javascript:this.src='https://i-cncdn.investing.com/anonym.gif';"></a>	<div class="textDiv">
+							<a href="../analysis/article-200458745.html" title="美国人假期倾巢而出，疫情防控“难上加难”：美股仍将狂欢不止？" class="title">美国人假期倾巢而出，疫情防控“难上加难”：美股仍将狂欢不止？</a>
+	                			</div>
+	<div class="clear"></div>
+</article><article class="js-article-item articleItem   " data-id="200458732">
+	<a href="../analysis/article-200458732.html" class="img"><img class="lazyload" data-src="../company_logo/f5990cad5d0cb4a9b35d6d2732d6930f.jpg" onerror="javascript:this.src='https://i-cncdn.investing.com/anonym.gif';"></a>	<div class="textDiv">
+							<a href="../analysis/article-200458732.html" title="靠着疫苗利好，“扶不起”的原油ETF要翻身？" class="title">靠着疫苗利好，“扶不起”的原油ETF要翻身？</a>
+	                			</div>
+	<div class="clear"></div>
+</article><article class="js-article-item articleItem   " data-id="200458725">
+	<a href="../analysis/article-200458725.html" class="img"><img class="lazyload" data-src="../company_logo/8a041e87308c804e01b487506cdf1197.jpg" onerror="javascript:this.src='https://i-cncdn.investing.com/anonym.gif';"></a>	<div class="textDiv">
+							<a href="../analysis/article-200458725.html" title="本周需要关注的3只个股：百思买、戴尔、迪尔" class="title">本周需要关注的3只个股：百思买、戴尔、迪尔</a>
+	                			</div>
+	<div class="clear"></div>
+</article></div>
+		        </div>
+					        </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--Templates-->
+
+    <!--
+        Group Templates
+    -->
+    <!--Quote group template-->
+    <div class="js-group-template textBox displayNone">
+        <div class="js-group-title groupHeader"></div>
+        <div class="js-group-results newResultsContainer">
+        </div>
+    </div>
+
+    <!--News items group template-->
+    <div class="js-news-items-group-template searchAside_item displayNone">
+        <a class="asideTitle js-group-more-link">
+            <div class="js-group-title groupHeader"></div>
+            <span>更多</span>
+        </a>
+        <div class="js-group-results articles smallTitle1 analysisImg"></div>
+    </div>
+
+    <!--
+        Row Templates
+    -->
+    <!--Quote row template-->
+    <a class="row js-quote-row-template js-quote-item displayNone">
+        <span class="first flag"><i class="ceFlags middle js-quote-item-flag"></i></span>
+        <span class="second js-quote-item-symbol symbolName"></span>
+        <span class="third js-quote-item-name"></span>
+        <span class="fourth typeExchange js-quote-item-type"></span>
+    </a>
+
+    <!--News row template-->
+    <article class="js-news-item-template articleItem displayNone">
+        <a href="../index.html" class="js-news-item-link">
+            <img class="js-news-item-img" src="../company_logo/d01b563261bcf223986f7ac222680343.jpg">
+            <div class="js-news-item-name textDiv"></div>
+        </a>
+    </article>
+
+    <div class="js-tool-item-template displayNone">
+        <a class="js-tool-item-link eventsAndTools">
+            <span class="js-tool-item-name"></span>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+	window.topBarSearchData = {
+		texts: {
+			recentSearchText: '近期搜索',
+			popularSearchText: '热门搜索',
+            newsSearchText: '新闻',
+            analysisSearchText: '分析评论',
+            economicEventsSearchText: '财经日历',
+            toolsSearchText: '工具和其它页面',
+			authorsSearchText: '分析师',
+			webinarsSearchText: '线上讲座'
+		},
+		popularSearches: [{"pairId":"6597","link":"\/equities\/rio-tinto","symbol":"RIO","name":"\u529b\u62d3\u96c6\u56e2","flag":"UK","type":"\u80a1\u7968 - \u4f26\u6566","ci":"4"},{"pairId":"381","link":"\/equities\/yara-internat","symbol":"YAR","name":"Yara International","flag":"Norway","type":"\u80a1\u7968 - \u632a\u5a01\u5965\u65af\u9646","ci":"60"},{"pairId":"255","link":"\/equities\/ford-motor-co","symbol":"F","name":"\u798f\u7279\u6c7d\u8f66\u516c\u53f8","flag":"USA","type":"\u80a1\u7968 - \u7ebd\u7ea6","ci":"5"},{"pairId":"8972","link":"\/equities\/singapore-exchange","symbol":"SGXL","name":"\u65b0\u52a0\u5761\u4ea4\u6613\u6240SGX","flag":"Singapore","type":"\u80a1\u7968 - \u65b0\u52a0\u5761","ci":"36"},{"pairId":"101325","link":"\/equities\/bank-mandiri-t","symbol":"BMRI","name":"\u66fc\u8fea\u5229\u94f6\u884c","flag":"Indonesia","type":"\u80a1\u7968 - \u5370\u5c3c\u96c5\u52a0\u8fbe","ci":"48"}]	};
+</script>		<div class="topBarTools">
+			<span id="userAccount" class="topBarUserAvatar js-open-auth-trigger-inside" data-page-type="topBar">
+					<div class="topBarText"><a onclick="overlay.overlayLogin();" href="javascript:void(0);" class="login bold">登录</a>/<a onclick="overlay.overlayRegister(); topBarPopup.trackTopBarGAEvent('Sign Up')" href="javascript:void(0);" class="register bold">免费注册</a></div>			</span>
+				                <span id="topBarAlertCenterBtn" class="topBarIconWrap">
+		                <i class="topBarAlertsIcon"></i><i class="topBarAlertBadge js-badge arial_10 displayNone">0</i></span>
+			<div class="newSigninPopup tooltipPopup displayNone js-top-bar-signin-popup bigArrowTopbar js-open-auth-trigger-inside">
+	<div class="header js-header">最新提醒</div>
+	<div class="content">
+		<span class="signinIcon js-icon"></span>
+		<div class="signInText js-explain-text">注册以创建品种、
+财经事件和所关注作者内容的提醒</div>
+		<a href="javascript:void(0);" onclick="overlay.overlayRegister();" id="signUPBtn" class="newButton orange">免费注册</a>		<div class="align_center">已有账户？ <a href="javascript:overlay.overlayLogin();" class="bold">登录</a></div>
+	</div>
+</div>	                <span id="portfolioTopBarBtn" class="topBarIconWrap">
+		                <i class="topBarPortfolioIcon"></i></span>
+				                <span id="topBarMarketBtn" class="topBarIconWrap">
+		                <i class="topBarWorldMarketsIcon"></i></span>
+			
+			<div class="langSelect inlineblock">
+				<div id="langSelect" class="inlineblock pointer" onmouseover="$('#editionContainer').fadeOut('fast'); flagsDropDown.render();" onmouseout="flagsDropDown.render();"><span class="ceFlags China middle inlineblock"></span></div>
+				<div id="TopFlagsContainer" class="tooltipPopup countrySelPopup bigArrowTopbar noHeader displayNone" onmouseover="flagsDropDown.render();" onmouseout="flagsDropDown.render();">
+					<div class="content">
+						<ul><li><a href="../index1.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to www.investing.com'); setTimeout('document.location = \'https://www.investing.com\'', 500);return false;"><span class="ceFlags USA"></span>English (USA)</a></li><li><a href="../index2.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to br.investing.com'); setTimeout('document.location = \'https://br.investing.com\'', 500);return false;"><span class="ceFlags Brazil"></span>Português (Brasil)</a></li><li><a href="../index3.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to uk.investing.com'); setTimeout('document.location = \'https://uk.investing.com\'', 500);return false;"><span class="ceFlags UK"></span>English (UK)</a></li><li><a href="../index4.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to ru.investing.com'); setTimeout('document.location = \'https://ru.investing.com\'', 500);return false;"><span class="ceFlags Russian_Federation"></span>Русский</a></li><li><a href="../index5.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to in.investing.com'); setTimeout('document.location = \'https://in.investing.com\'', 500);return false;"><span class="ceFlags India"></span>English (India)</a></li><li><a href="../index6.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to tr.investing.com'); setTimeout('document.location = \'https://tr.investing.com\'', 500);return false;"><span class="ceFlags Turkey"></span>Türkçe</a></li><li><a href="../index7.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to ca.investing.com'); setTimeout('document.location = \'https://ca.investing.com\'', 500);return false;"><span class="ceFlags Canada"></span>English (Canada)</a></li><li><a href="../index8.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to sa.investing.com'); setTimeout('document.location = \'https://sa.investing.com\'', 500);return false;"><span class="ceFlags Saudi_Arabia"></span>‏العربية‏</a></li><li><a href="../index9.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to au.investing.com'); setTimeout('document.location = \'https://au.investing.com\'', 500);return false;"><span class="ceFlags Australia"></span>English (Australia)</a></li><li><a href="../index10.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to gr.investing.com'); setTimeout('document.location = \'https://gr.investing.com\'', 500);return false;"><span class="ceFlags Greece"></span>Ελληνικά</a></li><li><a href="../index11.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to za.investing.com'); setTimeout('document.location = \'https://za.investing.com\'', 500);return false;"><span class="ceFlags South_Africa"></span>English (South Africa)</a></li><li><a href="../index12.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to se.investing.com'); setTimeout('document.location = \'https://se.investing.com\'', 500);return false;"><span class="ceFlags Sweden"></span>Svenska</a></li><li><a href="../index13.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to ph.investing.com'); setTimeout('document.location = \'https://ph.investing.com\'', 500);return false;"><span class="ceFlags Philippines"></span>English (Philippines)</a></li><li><a href="../index14.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to fi.investing.com'); setTimeout('document.location = \'https://fi.investing.com\'', 500);return false;"><span class="ceFlags Finland"></span>Suomi</a></li><li><a href="../index15.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to ng.investing.com'); setTimeout('document.location = \'https://ng.investing.com\'', 500);return false;"><span class="ceFlags Nigeria"></span>English (Nigeria)</a></li><li><a href="../index16.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to il.investing.com'); setTimeout('document.location = \'https://il.investing.com\'', 500);return false;"><span class="ceFlags Israel"></span>עברית</a></li><li><a href="../index17.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to de.investing.com'); setTimeout('document.location = \'https://de.investing.com\'', 500);return false;"><span class="ceFlags Germany"></span>Deutsch</a></li><li><a href="../index18.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to jp.investing.com'); setTimeout('document.location = \'https://jp.investing.com\'', 500);return false;"><span class="ceFlags Japan"></span>日本語</a></li><li><a href="../index19.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to es.investing.com'); setTimeout('document.location = \'https://es.investing.com\'', 500);return false;"><span class="ceFlags Spain"></span>Español (España)</a></li><li><a href="../index20.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to kr.investing.com'); setTimeout('document.location = \'https://kr.investing.com\'', 500);return false;"><span class="ceFlags South_Korea"></span>한국어</a></li><li><a href="../index21.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to mx.investing.com'); setTimeout('document.location = \'https://mx.investing.com\'', 500);return false;"><span class="ceFlags Mexico"></span>Español (México)</a></li><li><a href="../index22.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to hk.investing.com'); setTimeout('document.location = \'https://hk.investing.com\'', 500);return false;"><span class="ceFlags Hong_Kong"></span>繁體中文</a></li><li><a href="../index23.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to fr.investing.com'); setTimeout('document.location = \'https://fr.investing.com\'', 500);return false;"><span class="ceFlags France"></span>Français</a></li><li><a href="../index24.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to id.investing.com'); setTimeout('document.location = \'https://id.investing.com\'', 500);return false;"><span class="ceFlags Indonesia"></span>Bahasa Indonesia</a></li><li><a href="../index25.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to it.investing.com'); setTimeout('document.location = \'https://it.investing.com\'', 500);return false;"><span class="ceFlags Italy"></span>Italiano</a></li><li><a href="../index26.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to ms.investing.com'); setTimeout('document.location = \'https://ms.investing.com\'', 500);return false;"><span class="ceFlags Malaysia"></span>Bahasa Melayu</a></li><li><a href="../index27.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to nl.investing.com'); setTimeout('document.location = \'https://nl.investing.com\'', 500);return false;"><span class="ceFlags Netherlands"></span>Nederlands</a></li><li><a href="../index28.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to th.investing.com'); setTimeout('document.location = \'https://th.investing.com\'', 500);return false;"><span class="ceFlags Thailand"></span>ไทย</a></li><li><a href="../index29.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to pt.investing.com'); setTimeout('document.location = \'https://pt.investing.com\'', 500);return false;"><span class="ceFlags Portugal"></span>Português (Portugal)</a></li><li><a href="../index30.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to vn.investing.com'); setTimeout('document.location = \'https://vn.investing.com\'', 500);return false;"><span class="ceFlags Vietnam"></span>Tiếng Việt</a></li><li><a href="../index31.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to pl.investing.com'); setTimeout('document.location = \'https://pl.investing.com\'', 500);return false;"><span class="ceFlags Poland"></span>Polski</a></li><li><a href="../index32.html" onclick="ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'Users Choice', 'Redirect to hi.investing.com'); setTimeout('document.location = \'https://hi.investing.com\'', 500);return false;"><span class="ceFlags India"></span>हिंदी</a></li></ul>					</div>
+				</div>
+				<!-- GEO POPUP -->
+				<div class="topBarTableBox chooseEdition tooltipPopup bigArrowTopbar " id="topAlertBarContainer" style="display:none;">
+    <div class="popupInnerWrapper">
+        <div class="header"><span><i class="ceFlags China"></i></span><span class="chooseEditionHeaderText">跳转到中文版</span><a href="javascript:void(0);" class="bugCloseIcon" onclick="postponeEdition(14, 'Click on X')"></a> </div>
+        <div class="content">
+            您更倾向于浏览Investing.com的<span class="bold">中文</span>版吗？        </div>
+        <div class="topPortfolioFooter">
+            <a href="javascript:void(0);" onclick="postponeEdition(14, 'No Thanks')" alt="&#19981;&#65292;&#35874;&#35874;" class="newBtn LightGray noIcon">不，谢谢</a><a href="javascript:void(0);" onclick='setEdition("cn" , "https")' alt="&#26159;&#65292;&#36339;&#36716;&#33267;&#20013;&#25991;&#31449;" class="newBtn LightGray noIcon">是，跳转至中文站</a>        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function setEdition(target, d_p) {
+        // set cookie for default edition
+        //document.cookie ="myEdition="+target+"; expires=Fri, 1 Jan 2038 01:23:45 GMT; path=/";
+        if(!d_p) d_p = 'http';
+        var days=90;
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+        var currentTime = (new Date).getTime();
+        document.cookie = "editionPostpone="+currentTime+expires+"; path=/";
+
+        ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'System Recommend', 'Redirect to '+target+'.investing.com');
+		setTimeout('document.location = "'+d_p+'://'+ target +'.investing.com?ref=www"', 500);
+	}
+
+    function postponeEdition(days, reason) {
+        if (days!=14) days=1;
+        //$('#editionLoading').removeClass("displayNone").addClass("inlineblock");
+        // set cookie for days not to show bar again
+        //change time from 7 days to 14 (2 weeks), Gil Palikaras, JIRA-26314
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+        var currentTime = (new Date).getTime();
+        document.cookie = "editionPostpone="+currentTime+expires+"; path=/";
+        closeTopAlert();
+        ga('allSitesTracker.send', 'event', 'Edition Redirect Popup', 'System Recommend', reason);
+    }
+    function closeTopAlert(){
+        $('#topAlertBarContainer').fadeOut('fast');
+    }
+
+    $(document).ready (function(){
+                var timer = setInterval(function() {
+            if ($('#mainPopUpBannerDIV').is( ":hidden" )==true) {
+                clearInterval(timer);
+                //openTopAlert(2000);
+            }
+        }, 200);
+            });
+</script>				<!-- /GEO POPUP -->
+			</div>
+
+			<div class="ads-free-button-wrapper">
+    <a href="../ad-free-subscription/desktop_header_button.html" class="ads-free-button type-1">无广告版</a>
+</div>
+		</div>
+	</div>
+	<!-- /topBarInnerWrapper -->
+</div><!-- /topBar -->
+
+<script type="text/javascript">
+
+	loader([{
+		type: 'component', value: 'Translate'
+	}]).ready(function(Translate) {
+		Translate
+			.setDictionary('TopBarAlertsSignInPopup', {
+				'popupHeader': '最新提醒',
+				'notLoggedInText': "\u6ce8\u518c\u4ee5\u521b\u5efa\u54c1\u79cd\u3001\n\u8d22\u7ecf\u4e8b\u4ef6\u548c\u6240\u5173\u6ce8\u4f5c\u8005\u5185\u5bb9\u7684\u63d0\u9192",
+				'iconClasses': 'signinIcon',
+				'popupClasses': 'topBarAlertsSignInPopup'
+			})
+			.setDictionary('TopBarPortfolioSignInPopup', {
+				'popupHeader': '投资组合',
+				'notLoggedInText': "\u6ce8\u518c\u8d26\u6237\u540e\u60a8\u5373\u53ef\u5229\u7528Investing.com\u4e2a\u4eba\u6295\u8d44\u7ec4\u5408\u5de5\u5177\u521b\u5efa\u548c\u7ba1\u7406\u60a8\u7684\u81ea\u9009\u7ec4\u5408\u548c\u6301\u4ed3\u5217\u8868",
+				'iconClasses': 'signinIconPortfolio',
+				'popupClasses': 'topBarPortfolioBox'
+			});
+	})
+</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<div class="wrapper">
+
+
+					<link href="../css-OpenSans400700.css" rel="stylesheet">
+		
+					<link href="../css/mobileLP_2018_5a.css" rel="stylesheet">
+				<link href="../aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<script src="../aos@2.3.1/dist/aos.js"></script>
+		<script src="../ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+		<script src="../css-scroll-snap-polyfill@0.1.js"></script>
+
+		<nav class="js-mobile-lp-nav">
+			<ul>
+				<li class="current"><a href="javascript:void(0);" section-name=".hero"></a></li>
+				<li><a href="javascript:void(0);" section-name=".realtime-quotes"></a></li>
+				<li><a href="javascript:void(0);" section-name=".economic-calendar"></a></li>
+				<li><a href="javascript:void(0);" section-name=".breaking-news"></a></li>
+				<li><a href="javascript:void(0);" section-name=".portfolio"></a></li>
+			</ul>
+		</nav>
+
+		<script>
+			// AOS options and animation styles: https://github.com/michalsnik/aos
+			AOS.init({
+				// Global settings
+				disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				//disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+				initClassName: 'aos-init', // class applied after initialization
+				animatedClassName: 'aos-animate', // class applied on animation
+				useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+
+				// Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
+				offset: 500, // offset (in px) from the original trigger point
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 400, // values from 0 to 3000, with step 50ms
+				easing: 'ease', // default easing for AOS animations
+				once: false, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+			});
+
+			$(document).ready(function () {
+				var $htmlAndBody = $('html,body'),
+					$nav = $('.js-mobile-lp-nav'),
+					$navLi = $nav.find('li'),
+					$navLink = $nav.find('a'),
+					topRange = 200,  // measure from the top of the viewport to X pixels down
+					edgeMargin = 20,   // margin above the top or margin from the end of the page
+					animationTime = 600, // time in milliseconds
+					contentTop = [];
+
+				$navLi.each(function (index, li) {
+					var $li = $(li);
+					$li.find('a').on('click', function () {
+						$nav.find('.current').removeClass('current');
+						$li.addClass('current');
+
+						// Animate menu scroll to content
+						var $this = $(this),
+							sectionHeight = $($this.attr('section-name')).outerHeight(),
+							offset = Math.abs(window.innerHeight - sectionHeight) / 2,
+							isSectionBiggerThanView = sectionHeight > window.innerHeight,
+							newTop = Math.min(contentTop[$navLink.index($this)] - (isSectionBiggerThanView ? -offset : offset), $(document).height() - $(window).height()); // get content top or top position if at the document bottom
+						$htmlAndBody.stop().animate({'scrollTop': newTop}, animationTime);
+						return false;
+					})
+				});
+
+				// change NAV on scroll
+				// Stop animated scroll if the user does something
+				$htmlAndBody.bind('scroll mousedown DOMMouseScroll mousewheel keyup', function (e) {
+					if (e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel') {
+						$htmlAndBody.stop();
+					}
+				});
+
+				// Set up content an array of locations
+				$nav.find('a').each(function () {
+					contentTop.push($($(this).attr('section-name')).offset().top);
+				});
+
+				// adjust side menu
+				$(window).scroll(function () {
+					var winTop = $(window).scrollTop(),
+						bodyHt = $(document).height(),
+						vpHt = $(window).height() + edgeMargin,
+						$footerHeight = $('.mobile-lp-footer-wrapper').height();  // viewport height + margin
+					$.each(contentTop, function (i, loc) {
+						if ((loc > winTop - edgeMargin && (loc < winTop + topRange || (winTop + vpHt) >= bodyHt))) {
+							$navLi
+								.removeClass('current')
+								.eq(i).addClass('current');
+						}
+					});
+					$nav.toggleClass('rotemClass', (winTop + vpHt + $footerHeight) > bodyHt);
+				})
+			});
+		</script>
+		
+        <section id='hero' class='hero'>
+            <div class='imgContainer'><img src='../landingPages/mobile-2018/v2/cn/mobiles-header.png' alt='随时随地轻松掌握国际金融市场动态'></div>
+            <div class='text'>
+                <h1>随时随地轻松掌握国际金融市场动态</h1>
+                <p>马上免费获取英为财情Investing.com官方APP</p>
+                <div class='download-links'><a href='javascript:;' class='google-link'><img alt='立即在Google Play下载' src='../landingPages/mobile_2018/cn/cn-badge-android.png' class='google-img'></a><a href='javascript:;' class='apple-link'><img alt='马上从Apple Store获取' src='../landingPages/mobile_2018/cn/cn-badge-ios.png' class='apple-img'></a><img src="../landingPages/mobile-2018/v2/cn/cn-qr-code7.png" alt="" class="cn-qr-code"></div>
+            </div>
+    </section>
+        <section id='realtime-quotes' class='realtime-quotes'>
+            <div class='imgContainer'><img src='../landingPages/mobile-2018/v2/cn/mobiles-realtime.png' alt='上万种实时行情免费提供' data-aos='fade-left'></div>
+            <div class='text' data-aos='fade-right'>
+                <h2>上万种实时行情免费提供</h2>
+                <p>免费获取全球100多个交易所的数万种实时行情，包括股票、股指、外汇、期货、国债和基金等。</p>
+                <div class='download-links'><a href='javascript:;' class='google-link'><img alt='立即在Google Play下载' src='../landingPages/mobile_2018/cn/cn-badge-android.png' class='google-img'></a><a href='javascript:;' class='apple-link'><img alt='马上从Apple Store获取' src='../landingPages/mobile_2018/cn/cn-badge-ios.png' class='apple-img'></a><img src="../landingPages/mobile-2018/v2/cn/cn-qr-code7.png" alt="" class="cn-qr-code"></div>
+            </div>
+    </section>
+        <section id='economic-calendar' class='economic-calendar'>
+            <div class='imgContainer'><img src='../landingPages/mobile-2018/v2/cn/mobiles-calendar.png' alt='全球专业投资者推荐的财经日历' data-aos='fade-right'></div>
+            <div class='text' data-aos='fade-left'>
+                <h2>全球专业投资者推荐的财经日历</h2>
+                <p>拥有各国财经数据，全面展现全球重要经济指标以及财经事件，并可查看历史数据及自定义事件提醒</p>
+                <div class='download-links'><a href='javascript:;' class='google-link'><img alt='立即在Google Play下载' src='../landingPages/mobile_2018/cn/cn-badge-android.png' class='google-img'></a><a href='javascript:;' class='apple-link'><img alt='马上从Apple Store获取' src='../landingPages/mobile_2018/cn/cn-badge-ios.png' class='apple-img'></a><img src="../landingPages/mobile-2018/v2/cn/cn-qr-code7.png" alt="" class="cn-qr-code"></div>
+            </div>
+    </section>
+        <section id='breaking-news' class='breaking-news'>
+            <div class='imgContainer'><img src='../landingPages/mobile-2018/v2/cn/mobiles-news.png' alt='优质财经新闻+深度金融资讯' data-aos='fade-left'></div>
+            <div class='text' data-aos='fade-right'>
+                <h2>优质财经新闻+深度金融资讯</h2>
+                <p>无论何时何地，都能一手掌握最新财经新闻及独家分析评论</p>
+                <div class='download-links'><a href='javascript:;' class='google-link'><img alt='立即在Google Play下载' src='../landingPages/mobile_2018/cn/cn-badge-android.png' class='google-img'></a><a href='javascript:;' class='apple-link'><img alt='马上从Apple Store获取' src='../landingPages/mobile_2018/cn/cn-badge-ios.png' class='apple-img'></a><img src="../landingPages/mobile-2018/v2/cn/cn-qr-code7.png" alt="" class="cn-qr-code"></div>
+            </div>
+    </section>
+        <section id='portfolio' class='portfolio'>
+            <div class='imgContainer'><img src='../landingPages/mobile-2018/v2/cn/tablet-portfolio.png' alt='可定制化个人自选投资组合' data-aos='fade-right'></div>
+            <div class='text' data-aos='fade-left'>
+                <h2>可定制化个人自选投资组合</h2>
+                <p>在手机上即可实时追踪您的交易状况或查看自选投资组合；可创建多类别组合，囊括全球资产 </p>
+                <div class='download-links'><a href='javascript:;' class='google-link'><img alt='立即在Google Play下载' src='../landingPages/mobile_2018/cn/cn-badge-android.png' class='google-img'></a><a href='javascript:;' class='apple-link'><img alt='马上从Apple Store获取' src='../landingPages/mobile_2018/cn/cn-badge-ios.png' class='apple-img'></a><img src="../landingPages/mobile-2018/v2/cn/cn-qr-code7.png" alt="" class="cn-qr-code"></div>
+            </div>
+    </section>		<footer id="footerWrapper">
+	<div>
+			</div>
+
+    <section class="top">
+        <div class="float_lang_base_1 links">
+            <div class="title">Investing.com</div>
+                						<ul class="first inlineblock">
+							    								<li><a title="博客" href="../blog/index.html">博客</a></li>
+    	                        	    								<li><a title="APP下载" href="">APP下载</a></li>
+    	                        	    								<li><a title="投资组合" href="../portfolio/index.html">投资组合</a></li>
+    	                        	    								<li><a title="网站管理员工具" href="../webmaster-tools/index1.html">网站管理员工具</a></li>
+    	                        	                        </ul>
+                						<ul class="inlineblock">
+							    								<li><a title="关于我们" href="../about-us/index.html">关于我们</a></li>
+    	                        	    								<li><a title="广告" href="../about-us/advertise.html">广告</a></li>
+    	                        	    								<li><a title="帮助与支持" href="javascript:;" target='_blank'>帮助与支持</a></li>
+    	                        	                        </ul>
+                            <div class="clear"></div>
+        </div>
+        <div class="float_lang_base_1 mobile">
+            <img src="../footer/footerMobile2018.png" alt="" class="mobileCells">
+                        <div class="title">立即下载英为财情APP</div>
+            <a href="javascript:;" target="_blank"><img src="../footer/img6/googleplay_cn.png" alt="下载安卓版英为财情"></a><a href="javascript:;" target="_blank"><img src="../footer/img6/appstore_cn.png" alt="下载iOS版英为财情"></a>        </div>
+        		<div class="float_lang_base_1 social">
+			<div class="title">关注英为财情</div>
+			<div class="qrCode"><img src="../footer/cn_footer_qr_code_v11.png"></div>
+			<ul class="cnSocial">
+				<li><a href="javascript:;" target="_blank" class="weibo" title="东方财富"></a></li>
+				<li><a href="javascript:;" target="_blank" class="toutiao" title="今日头条"></a></li>
+				<li><a href="javascript:;" target="_blank" class="snowball" title="雪球"></a></li>
+				<li><a href="javascript:;" target="_blank" class="eastmoney" title="微博"></a></li>
+			</ul>
+		</div>
+		        <div class="clear"></div>
+    </section>
+    <section class="bottom">
+        <img src="../logos/footerLogo2.png" alt="Investing.com">
+        <ul class="float_lang_base_2 clearfix">
+            <li><a href="../about-us/terms-and-conditions.html">敬告读者</a></li>
+            <li><a href="../about-us/privacy-policy.html">法律说明</a></li>
+	                    <li><a href="../about-us/risk-warning.html">风险声明</a></li>
+                    </ul>
+        <div>&copy; 2007-2020 Fusion Media Limited | 粤ICP备17131071号 | 保留所有权利。        </div>
+		
+			<div class="cnFriendshipLinks">
+				<div class="title">合作伙伴</div>
+				<a href="javascript:;" target="_blank">腾讯财经</a><a href="javascript:;" target="_blank">财联社</a><a href="javascript:;" target="_blank">雪球</a><a href="javascript:;" target="_blank">云掌财经</a><a href="javascript:;" target="_blank">新浪财经</a><a href="javascript:;" target="_blank">金融界</a><a href="javascript:;" target="_blank">金十数据</a><a href="javascript:;" target="_blank">和讯</a><a href="javascript:;" target="_blank">网易财经</a><a href="javascript:;" target="_blank">汇通网</a><a href="javascript:;" target="_blank">证券之星</a><a href="javascript:;" target="_blank">FX168</a><a href="javascript:;" target="_blank">同花顺财经</a>			</div>
+		        <div class="disclaimer">
+            <span class="bold">风险批露:</span> 交易股票、外汇、商品、期货、债券、基金等金融工具或加密货币属高风险行为，这些风险包括损失您的部分或全部投资金额，所以交易并非适合所有投资者。加密货币价格极易波动，可能受金融、监管或政治事件等外部因素的影响。保证金交易会放大金融风险。<br>
+在决定交易任何金融工具或加密货币前，您应当充分了解与金融市场交易相关的风险和成本，并谨慎考虑您的投资目标、经验水平以及风险偏好，必要时应当寻求专业意见。<br>
+<b>Fusion Media</b>提醒您，本网站所含数据未必实时、准确。本网站的数据和价格未必由市场或交易所提供，而可能由做市商提供，所以价格可能并不准确且可能与实际市场价格行情存在差异。即该价格仅为指示性价格，反映行情走势，不宜为交易目的使用。对于您因交易行为或依赖本网站所含信息所导致的任何损失，<b>Fusion Media</b>及本网站所含数据的提供商不承担责任。<br>
+未经<b>Fusion Media</b>及/或数据提供商书面许可，禁止使用、存储、复制、展现、修改、传播或分发本网站所含数据。提供本网站所含数据的供应商及交易所保留其所有知识产权。<br>
+本网站的广告客户可能会根据您与广告或广告主的互动情况，向<b>Fusion Media</b>支付费用。
+本协议的英文版本系主要版本。如英文版本与中文版本存在差异，以英文版本为准。        </div>
+    </section>
+	</footer>
+
+<script type="text/javascript" src="../js/n/consent-manager-1.06.min.js"></script>
+<script type="text/javascript" src="../js/n/search-bar-2.0-1.18.min.js"></script>
+
+<script type="text/javascript" src="../js/ads.js"></script>
+<script type="text/javascript" src="../instream/ad_status.js"></script>
+
+<script type="text/javascript">
+
+if(!Modernizr.csstransitions && ie !== 7) {
+	// Bind MouseOver effect to Navigation list nodes
+	$('.navMenuUL > li').bind('mouseenter', function() {
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.subTopMenuTwoColumnContainer', someelement).show();$('.arrow', someelement).show();$('.arrow2', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.subTopMenuTwoColumnContainer', someelement).hide();$('.arrow', someelement).hide();$('.arrow2', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    });
+    
+	// Bind MouseOver effect to Real Time Quotes list nodes
+	$('#navRealTime').bind('mouseenter', function() {
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    }); 
+
+	// Bind MouseOver effect to Real Time Quotes list nodes
+	$('.navRealTimeSubmenu .row').bind('mouseenter', function() {
+		
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.navRealTimeSubMenuContainer', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.navRealTimeSubMenuContainer', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    });
+}
+$('#navRealTime').bind('click', function() {
+    clearTimeout($(this).data('hideTimeout'));
+    var someelement = this;
+    var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).show(); }, 120);
+    $(someelement).data('showTimeout', timeoutId);
+});
+
+var _gaq = _gaq || [];
+//new
+    ga('create', 'UA-2555300-71', 'investing.com');
+    ga('create', 'UA-2555300-55', 'auto', {'name': 'allSitesTracker'});  // ALL sites tracker.
+
+    var prebidPreActive = '0';
+    ga('allSitesTracker.set', 'dimension37', (
+        window.helpers.getCookie("prebid_page") === '1' &&
+        window.helpers.getCookie("prebid_session") === '1' &&
+        prebidPreActive === '1'
+    ) ? 'page with prebid' : 'page without prebid');
+
+    
+        ga('allSitesTracker.set', 'dimension127', 0);
+    ga('require', 'displayfeatures');
+    ga('allSitesTracker.set', 'dimension73','Web');
+    ga('allSitesTracker.set', 'dimension17', getCookie('_ga').substr(6));
+    ga('allSitesTracker.set', 'dimension1', 0);
+	ga('allSitesTracker.set', 'dimension49', '1vmodgp57gv34c2budt4bokqus');
+	ga('allSitesTracker.set', 'dimension95', '6');
+
+    	ga('set', 'dimension73','Web');
+
+	ga('allSitesTracker.set', 'dimension106', 'No');
+	ga('allSitesTracker.set', 'dimension54', 'No');
+
+	var myDate = new Date();
+	ga('allSitesTracker.set', 'dimension81',myDate.getFullYear() + '/' +('0' + (myDate.getMonth()+1)).slice(-2)+ '/' +  ('0' + (myDate.getDate()+1)).slice(-2) + ' '+('0' + (myDate.getHours()+1)).slice(-2)+ ':'+('0' + (myDate.getMinutes())).slice(-2)+ ':'+('0' + (myDate.getSeconds()+1)).slice(-2));
+	    ga('send', 'pageview');
+    ga('allSitesTracker.set','&uid', 0);
+	<!-- Crypto Dimension LD -->
+	    <!--Adblock Check-->
+
+	jQuery(document).ready(checkAds());
+
+	function checkAds(){
+
+		function isIE() {
+			var ua = window.navigator.userAgent;
+			var trident = ua.indexOf('Trident/');
+			var edge = ua.indexOf('Edge/');
+			var msie = ua.indexOf('MSIE ');
+			return Math.max(msie,edge,trident)>0;
+
+		}
+
+		var isIE = isIE();
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && !isIE;
+		var isFireFox = /Firefox/.test(navigator.userAgent);
+		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+		var isOneOfThoseBrowsers = [isIE,isChrome,isFireFox,isSafari].indexOf(true)>-1;
+
+		var b = 2;
+
+		//var hasAdsenseBlock = !!$('#adsense').length;
+		//var hasShadowDom = (!!$("html")[0].shadowRoot);
+		//var headerIsShown = ($(".midHeader").height() > 0 && $(".midHeader").css('display') !== 'none');
+
+	    		  
+		if (window.google_ad_status == 1){
+
+    		var adbBlk = getCookie('adbBLk');
+    		if(isOneOfThoseBrowsers && adbBlk>0){
+        		ga('allSitesTracker.set', 'dimension22', '6_Blk_No');
+        		setCookie('adbBLk',6,-1000);
+    		}  
+    		
+    	}else{
+
+    	    b = 1;
+            $('#TopTextAd').css('display','flex');
+
+			if(isOneOfThoseBrowsers) {
+				setCookie('adbBLk',6,1000,'/');
+				ga('allSitesTracker.set', 'dimension21', '6_Blk_Yes');
+				 
+							}
+    	}
+		
+		$.ajax({
+		    url: "/jp.php?b="+b+"&k=ZGNmYDZlZm9lYWgxYzcyYTYyN25hYTM1MjViYjczMzo1OjMwYjc2NmFnb2ViOjg2YjdkZT9pNjZhazA8NTk3YmR7Zi82OGZhZXRoMWNiMjQ2eTc6YTkzczJmYik3cDN7NWwzJmJ6NmBhaW9u&d=1&i=1606196136&e=1903102324&lip=hkweb4.forexpros.com&ti=1606196136",
+		    type: 'get',
+		    cache: false,
+		    type: 'GET',
+		    dataType: 'html',
+		    success: function (data) {
+		    	  console.log('server jp b1 hkweb4.forexpros.com');
+		    }
+		});
+    	
+    }
+
+    	
+	ga('allSitesTracker.send', 'pageview');
+	<!--End Adblock Check-->
+
+
+</script>
+    
+
+        <script>
+            var _hmt = _hmt || [];
+            (function()
+            { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?a1e3d50107c2a0e021d734fe76f85914"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); }
+            )();
+        </script>    
+
+ 
+<script>
+//disabled is a temporary argument for testing purposes 
+var BoxesEvents = function($,ga,disabled)
+{
+	var e_stack = []; //each event is pushed to this stack
+	//this objcet links urls to event types
+    var boxes = {"side_central_banks":"centralbanks","webmaster_tools":"wmt","Most_Popular_News":"mostpop","broker_promotions":"sb_promotions","marketMoversBoxWrapper":"sb_marketmovers","QBS_2_inner":"sb_indices","QBS_3_inner":"sb_commodities","QBS_1_inner":"sb_forex","QBS_4_inner":"sb_bonds","TSB_1_inner":"tsb_fx","TSB_2_inner":"tsb_commodities","TSB_3_inner":"tsb_indices","TSB_4_inner":"tsb_stocks"};
+
+    var resume_click_event = function(ev)
+    {
+    	if (ev['link']==='') {return;}
+        window.location.href = ev['link'];
+    }
+    
+    
+	var register_events = function()
+	{
+	    for (var id in boxes)
+	    {
+		    (function(id){
+			    var _$b = $('#'+id);
+			    if (_$b.length < 1) {return;}
+			    
+			    //box click event
+			    _$b.mouseup(function(e){
+					if (e.button === 2) {return true;} //right mouse button
+					var middleMouse = e.button === 1;
+				    if (!middleMouse) {e.preventDefault();}
+				    var box_event = boxes[id];
+				    e_stack.push({'event':box_event,'link':''});
+				    var ce = null; //current event 
+				    //function creator
+				    var callbackCreate = function(data) {return function() {resume_click_event(data);}}
+		            var hitCallback = null;
+		            
+				    while(ce = e_stack.pop())
+				    {
+						if (ce['link'].substr(0,10) === "javascript") {continue;}//if the link is javascript call ignore it
+						hitCallback = middleMouse ? function(){} : callbackCreate(ce);
+				    	//if a link with no event do nothing
+					    if (ce['event'] == '') {hitCallback(); return true;}
+						
+				    					        window.ga('t0.send',{
+                            'hitType': 'event',          
+                            'eventCategory': 'side-box-events',
+                            'eventAction': ce['event'], 
+                            'eventValue' : 1,
+                            'hitCallback': hitCallback //resume click event
+				            }
+				        );
+				        //fallback if ga doesn't work
+				        window.setTimeout(hitCallback,1500);
+				    }
+				    return middleMouse;
+			    });
+			    
+			    //link event 
+                _$b.on('mouseup','a',function(e){
+					if (e.button === 2) {return true;} //right mouse button
+                	e.preventDefault();
+					var url = this.getAttribute('href');
+					var event = this.getAttribute('data-gae');
+					e_stack.push({'event':'','link':url});
+					if (event)
+					{
+						e_stack.pop();
+						e_stack.push({'event':event,'link':url});
+					} 
+				  });
+    	        
+		    })(id);
+	    }		   	
+	};
+	
+    var init = function()
+    {
+        if (disabled) {return;}
+        if (typeof $ !== 'function') {return;}
+        if (typeof ga !== 'function') {return;}
+        register_events();
+    }();
+}(window.jQuery,window.ga,true);
+</script>
+	</div>
+	</body>
+	</html>

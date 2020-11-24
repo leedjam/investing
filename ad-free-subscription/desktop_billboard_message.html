@@ -1,0 +1,776 @@
+
+<!DOCTYPE HTML>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hans" xmlns:schema="http://schema.org/" class="cn" lang="zh-Hans">
+
+<head>
+    
+<script src="../consent/tcf.stub.js" type="text/javascript" ></script>
+<script src="../scripttemplates/otSDKStub.js" type="text/javascript" data-domain-script="265d5ac2-7d0c-4675-bf4d-421a61fb482e"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+
+    // temp for checks
+    </script>
+<style>
+	.ot-floating-button {
+		z-index:12 !important;
+	}
+</style>
+
+    <script src="../js/jquery-6.4.9.04.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+    <script type="text/javascript">
+        window.helpers = {
+            'getCookie': function (k){var v="; "+document.cookie;var p=v.split("; "+k+"=");if(p.length===2)return p.pop().split(";").shift();else return null},
+            'setCookie': function (k,v,d){var e='';if(typeof d!=='undefined'){var n=new Date;n.setTime(n.getTime()+864e5*d);e+=';expires="';e+=n.toGMTString();e+='"';}document.cookie=k+'='+v+';path=/' + e},
+            'delCookie': function (k){document.cookie=k+'=;path=/;expires=-1'},
+            'isNumber': function (n){return !isNaN(n)&&typeof n!==undefined&&n!==null&&n!==''},
+            'removeClass': function (e,c){if(document.documentElement.classList){e.classList.remove(c);}else{var r=new RegExp('(^|\\s)'+c+'(\\s|$)', 'g');e.className=e.className.replace(r, c)}},
+            'addClass': function (e,c){if(document.documentElement.classList){e.classList.add(c);}else{if(e.className.indexOf(c)<0){if((e.className!==''&&e.className.charAt[e.className.length-1]===' ')||e.className===''){e.className+=c}else{e.className+=' '+c}}}},
+            'hasClass': function (e,c){if(document.documentElement.classList){e.classList.contains(c);}else{return e.className.indexOf(c)>=0}},
+        };
+    </script>
+    <script src="../js/n/toolset-1.19.min.js"></script>
+    
+        <script src="../js/logger-1.02.min.js"></script>
+
+        
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/">
+<script async="" src="../tag/js/gpt.js"></script>
+<script type="text/javascript">
+	window.googletag = window.googletag || {};
+	window.googletag.cmd = window.googletag.cmd || [];
+	window.loadSideBlockAd3 = function () {
+		googletag.cmd.push(function () {
+			_.defineSlot({"platform":"desktop","sizes":[[300,250],[300,600]],"adSlotDivID":"div-gpt-ad-1370187203350-sb3","adUnitDivAttributes":{"advertisementText":"\u5e7f\u544a"},"print":true,"preBid":false,"excludedSections":["ccpa"],"defineSlot":"\/6938\/FP_CN_site\/FP_CN_Sideblock_3_viewable"});
+            googletag.display('div-gpt-ad-1370187203350-sb3');
+
+                            _addAdvertisementText('div-gpt-ad-1370187203350-sb3', '广告');
+            
+		});
+	};
+	console.log('### - Prebid is off');
+</script>
+
+    <script type="text/javascript">
+        window.a892ffe2982c = {
+			defineSlots: function () {
+				var googletagGA = window.helpers.getCookie('_ga');
+				var screenWidthForAds= document.body.offsetWidth,
+					screenWidthValue,
+					adBreakPoints = [1336,1440,1920];
+
+				if (googletagGA) {
+					window.googletag.pubads().setTargeting('CID', googletagGA.substr(6));
+				}
+				if (screenWidthForAds < adBreakPoints[0]){ screenWidthValue = 'small' }
+				else if (screenWidthForAds >= adBreakPoints[0] && screenWidthForAds <= adBreakPoints[1]) {
+					screenWidthValue = 'medium'
+				}
+				else if (screenWidthForAds > adBreakPoints[1]) {
+					screenWidthValue = 'big'
+				}
+
+				_.attachEvents();
+				_.each({"Section":"other","Sub_Section":"","Charts_Page":"no","Page_URL":"\/ad-free-subscription\/?source=desktop&medium=billboard_message","Domain":"cn.investing.com","smd":"h885trutkecdiklulh2oaq0o62","edition_id":"6","Traffic_Type":"OG","User_type":"Not_Logged_in","prebid_session":"0","prebid_page":"0"}, function (val, key) { _.setTargeting(key, val) });
+				_.setTargeting('screen_width', screenWidthValue);  // send browser width - REVOP-329
+				_.each({"Billboard_Default":{"platform":"desktop","sizes":[[970,250],[970,90],[728,90]],"adSlotDivID":"div-gpt-ad-1441189641022-6","print":true,"preBid":true,"adUnitDivAttributes":{"advertisementText":"\u5e7f\u544a","resize":"1","style":"height:276px;"},"collapseDiv":[true],"excludedSections":["ccpa","webinars"],"overrideRules":[{"conditions":{"relevantSections":["FX","indices","equities","etfs","Commodities","funds","ratesbonds","Crypto","certificates"]},"rewrite":{"adUnitDivAttributes":{"closeButton":"1","advertisementText":"\u5e7f\u544a","resize":"1"}}}],"defineSlot":"\/6938\/FP_CN_site\/FP_CN_Billboard_Default"},"Takeover_Default":{"platform":"desktop","sizes":[[300,600],[160,600],[120,600]],"adSlotDivID":"div-gpt-ad-1478019486943-0","adUnitDivAttributes":{"advertisementText":"\u5e7f\u544a","resize":"1"},"middleDefinition":[[[1630,0],[[300,600],[160,600],[120,600]]],[[1340,0],[[160,600],[120,600]]],[[0,0],[]]],"excludedSections":["brokers","ccpa","webinars","portfolio","members-admin"],"print":true,"preBid":false,"defineSlot":"\/6938\/FP_CN_site\/FP_CN_Takeover_Default"},"TNB_Right_Rail_1":{"platform":"desktop","sizes":["fluid"],"adSlotDivID":"div-gpt-ad-1587967538923-0","collapseDiv":[true,true],"adUnitDivAttributes":{"style":"width:300px;height:85px;"},"print":true,"preBid":false,"excludedSections":["ccpa","webinars"],"defineSlot":"\/6938\/FP_CN_site\/FP_CN_TNB_Right_Rail_1"},"TNB_Right_Rail_2":{"platform":"desktop","sizes":["fluid"],"adSlotDivID":"div-gpt-ad-1589439035225-0","adUnitDivAttributes":{"style":"height:85px; width:300px;"},"collapseDiv":[true,true],"print":true,"preBid":false,"excludedSections":["ccpa","webinars"],"defineSlot":"\/6938\/FP_CN_site\/FP_CN_TNB_Right_Rail_2"}}, _.defineSlot);
+			},
+            isPrebid: false
+		}
+    </script>
+<script type="text/javascript">
+    window.googletag.cmd.push(function () {
+        let isGdpr 			= 0;
+		let isCcpaStates 	= 0
+		window.a892ffe2982c.defineSlots();
+        //if is not gdpr compliant - get personal ads
+        if (!isGdpr || (isGdpr && getCookie('CMP_CONSENT') === '1')) {
+            window.googletag.pubads().setRequestNonPersonalizedAds(0);
+        }
+
+        // ADX ccpa (optout - 1YYN) restricted data processing
+        if( isCcpaStates && getCookie('usprivacy') === '1YYN')
+        {
+            console.log('CCPA privacy restrict data processing');
+            window.googletag.pubads().setPrivacySettings({
+                'restrictDataProcessing': true
+            });
+		}
+        window.googletag.pubads().enableSingleRequest();
+        window.googletag.enableServices();
+    })
+
+    function _addAdvertisementText(elementKey, text) {
+        let dfpElement = document.getElementById(elementKey);
+        if (dfpElement) {
+            let advertisementDiv = _.createAdvertisementPrefix(text);
+            dfpElement.parentElement.prepend(advertisementDiv);
+        }
+    }
+
+</script>
+
+
+
+
+
+<title>订阅无广告版_英为财情Investing.com</title>
+<!--            <link rel="alternate" hreflang="--><!--" href="--><!--"  />-->
+<!--        --><!--        <link rel="alternate" hreflang="--><!--" href="--><!--"  />-->
+<!--        -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="zh-cn">
+<meta name="description" content="订阅无广告版，提升英为财情Investing.com使用体验。一个无广告账号，畅游英为财情Investing.com所有版本和APP。">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="baidu_ssp_verify" content="867e13c8aeefe44c96c098634fb27ffe"><meta name="baidu-site-verification" content="2HFUVwyWx8">
+	
+        <meta name="sogou_site_verification" content="EjbGId1iE9">
+        <meta name="360-site-verification" content="719487870293f8986e18316183ca4af2">
+        <meta name="shenma-site-verification" content="fae74e8872a84f59ef059de483b5817b_1519293915"> 
+    <meta property="og:title" content="订阅无广告版_英为财情Investing.com"> 
+<meta property="og:description" content="订阅无广告版，提升英为财情Investing.com使用体验。一个无广告账号，畅游英为财情Investing.com所有版本和APP。"> 
+<meta property="og:type" content="website"> 
+<meta property="og:url" content="https://cn.investing.com/ad-free-subscription/?source=desktop&amp;medium=billboard_message"> 
+<meta property="og:image" content="https://i-invdn-com.akamaized.net/redesign/images/seo/v2/investing_300X300.png"> 
+<meta property="og:site_name" content="Investing.com 中文"> 
+<meta property="og:locale" content="zh_CN"> 
+    <meta name="google-site-verification" content="DTRxWXB3vjNUsTCPICWo9yzZmIllylXYkRevEXo7szg">
+
+
+
+<!-- css -->
+            <link rel="stylesheet" href="../css/mainOldMin_v3b.css" type="text/css">
+                          <link rel="stylesheet" href="../css/newMainCssCnMin_v76h.css" type="text/css">
+                    <link href="../css-NotoSansSC400700_chinese-sim.css" rel="stylesheet">
+
+
+    <link href="../css/printContent_v10.css" media="print" rel="stylesheet" type="text/css">
+
+
+<!-- css -->
+
+<!-- js -->
+<script type="text/javascript">
+var domainId = "6";
+window.CDN_URL = "https://i-cncdn.investing.com";
+</script>
+
+<script type="text/javascript" src="../js/n/notifications-1.02.min.js"></script>
+<script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
+<script type="text/javascript" src="../js/n/utils-0.16.min.js"></script>
+<script type="text/javascript" src="../js/main-1.17.265.min.js"></script>
+<script type="text/javascript" src="../js/ad-free-subscription-1.0.07.min.js"></script>
+<!-- Forces IE6,IE7 to understand PSEUDO CLASSES :after and :before (add before: " "; after: " "; to CSS) -->
+<!--[if (gte IE 6)&(lte IE 7)]>
+<script src="https://i-cncdn.investing.com/js/jquery.pseudo-1.1.min.js"></script>
+<![endif]-->
+<!--Global variables for JavaScript-->
+<script type="text/javascript">
+    window.login_url = '/members-admin/login';
+        window.close_word = '结束';
+    window.lightbox_image = '图象';
+    window.lightbox_from = '发件人';
+        var FP = {
+        global  : {
+            _defaultDomain  : 'cn.investing.com',
+            _textAlign      : 'left'
+        }
+    };
+    var userType;
+    var userSupportedType ;
+</script>
+<!--Global variables for JavaScript-->
+<!-- js -->
+
+
+<script type="text/javascript">
+    /* Modernizr 2.0.6 (Custom Build) | MIT & BSD
+     * Build: http://www.modernizr.com/download/#-csstransitions-iepp-cssclasses-testprop-testallprops-domprefixes
+     */
+    window.Modernizr=function(a,b,c){function A(a,b){var c=a.charAt(0).toUpperCase()+a.substr(1),d=(a+" "+n.join(c+" ")+c).split(" ");return z(d,b)}function z(a,b){for(var d in a)if(k[a[d]]!==c)return b=="pfx"?a[d]:!0;return!1}function y(a,b){return!!~(""+a).indexOf(b)}function x(a,b){return typeof a===b}function w(a,b){return v(prefixes.join(a+";")+(b||""))}function v(a){k.cssText=a}var d="2.0.6",e={},f=!0,g=b.documentElement,h=b.head||b.getElementsByTagName("head")[0],i="modernizr",j=b.createElement(i),k=j.style,l,m=Object.prototype.toString,n="Webkit Moz O ms Khtml".split(" "),o={},p={},q={},r=[],s,t={}.hasOwnProperty,u;!x(t,c)&&!x(t.call,c)?u=function(a,b){return t.call(a,b)}:u=function(a,b){return b in a&&x(a.constructor.prototype[b],c)},o.csstransitions=function(){return A("transitionProperty")};for(var B in o)u(o,B)&&(s=B.toLowerCase(),e[s]=o[B](),r.push((e[s]?"":"no-")+s));v(""),j=l=null,a.attachEvent&&function(){var a=b.createElement("div");a.innerHTML="<elem></elem>";return a.childNodes.length!==1}()&&function(a,b){function s(a){var b=-1;while(++b<g)a.createElement(f[b])}a.iepp=a.iepp||{};var d=a.iepp,e=d.html5elements||"abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",f=e.split("|"),g=f.length,h=new RegExp("(^|\\s)("+e+")","gi"),i=new RegExp("<(/*)("+e+")","gi"),j=/^\s*[\{\}]\s*$/,k=new RegExp("(^|[^\\n]*?\\s)("+e+")([^\\n]*)({[\\n\\w\\W]*?})","gi"),l=b.createDocumentFragment(),m=b.documentElement,n=m.firstChild,o=b.createElement("body"),p=b.createElement("style"),q=/print|all/,r;d.getCSS=function(a,b){if(a+""===c)return"";var e=-1,f=a.length,g,h=[];while(++e<f){g=a[e];if(g.disabled)continue;b=g.media||b,q.test(b)&&h.push(d.getCSS(g.imports,b),g.cssText),b="all"}return h.join("")},d.parseCSS=function(a){var b=[],c;while((c=k.exec(a))!=null)b.push(((j.exec(c[1])?"\n":c[1])+c[2]+c[3]).replace(h,"$1.iepp_$2")+c[4]);return b.join("\n")},d.writeHTML=function(){var a=-1;r=r||b.body;while(++a<g){var c=b.getElementsByTagName(f[a]),d=c.length,e=-1;while(++e<d)c[e].className.indexOf("iepp_")<0&&(c[e].className+=" iepp_"+f[a])}l.appendChild(r),m.appendChild(o),o.className=r.className,o.id=r.id,o.innerHTML=r.innerHTML.replace(i,"<$1font")},d._beforePrint=function(){p.styleSheet.cssText=d.parseCSS(d.getCSS(b.styleSheets,"all")),d.writeHTML()},d.restoreHTML=function(){o.innerHTML="",m.removeChild(o),m.appendChild(r)},d._afterPrint=function(){d.restoreHTML(),p.styleSheet.cssText=""},s(b),s(l);d.disablePP||(n.insertBefore(p,n.firstChild),p.media="print",p.className="iepp-printshim",a.attachEvent("onbeforeprint",d._beforePrint),a.attachEvent("onafterprint",d._afterPrint))}(a,b),e._version=d,e._domPrefixes=n,e.testProp=function(a){return z([a])},e.testAllProps=A,g.className=g.className.replace(/\bno-js\b/,"")+(f?" js "+r.join(" "):"");return e}(this,this.document);
+    window.ie = (function(){var undef,v = 3,div = document.createElement('div'),all = div.getElementsByTagName('i');while (div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',all[0]);return v > 4 ? v : undef;}());
+</script>
+
+<!-- TEMP -->
+
+<style>
+    .googleContentRec {display:inline-block;width:650px;height:300px;}
+
+</style>
+
+<style>
+        /* INPUTS OVERWRITES */
+    .combineSearchBox {border:1px solid #737373;} /* overwrite main css */
+    .combineSearchBox.newInput.inputTextBox, .portfolioSearch .newInput.inputTextBox  {padding:0;}
+</style>
+
+<!--[if (IE 8)|(IE 9)]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie8-9main_v2b.css">
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie8main_v2a.css">
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://i-cncdn.investing.com/css/ie7main_v1i.css">
+<![endif]-->
+
+
+<style>
+    .MainTableDirectory .HeadTitlesRow TH {text-align:center; font-weight:bold;}
+</style>
+
+<style>
+    .openTbl TH.icon {text-align:center;}     .openTbl TH.icon SPAN {position:relative; top:2px;}
+</style>
+<script>
+    var oldIE = false, explorerEight = false ,explorerNine = false, sponsoredArticle;
+</script>
+<!--[if lte IE 7]>
+<script>
+    oldIE = true;
+</script>
+<![endif]-->
+<!--[if (IE 8)]>
+<script>
+    explorerEight = true;
+</script>
+<![endif]-->
+<!--[if (IE 9)]>
+<script>
+    explorerNine = true;
+</script>
+<![endif]-->
+
+<script>var ff2fb90925aa864dfd1632392="a8838696bfe9f6a30b8550a715232089";</script><!-- Hotjar Tracking Code -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:174945,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script data-obct="" type="text/javascript">
+    /** DO NOT MODIFY THIS CODE**/
+    !function(_window, _document) {
+        var OB_ADV_ID='00d807ecaf50797b1d395f73b69546fffe';
+        if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
+        var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
+    obApi('track', 'PAGE_VIEW');
+</script><script>
+    (function(){
+        var canonicalURL, curProtocol;
+        //Get the <link> tag
+        var x=document.getElementsByTagName("link");
+        //Find the last canonical URL
+        if(x.length > 0){
+        for (i=0;i<x.length;i++){
+        if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+                    canonicalURL=x[i].href;
+                }
+            }
+        }
+        //Get protocol
+        if (!canonicalURL){
+            curProtocol = window.location.protocol.split(':')[0];
+        }
+        else{
+            curProtocol = canonicalURL.split(':')[0];
+        }
+        //Get current URL if the canonical URL does not exist
+        if (!canonicalURL) canonicalURL = window.location.href;
+        //Assign script content. Replace current URL with the canonical URL
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+</script>
+<script></script></head>
+
+<body class="takeover adFreeBg">
+<div class="topBar singlePageTopAdd">
+	<div class=""></div>
+	<div class="topBarInnerWrapper">
+		<h1><a href="../index.html" class="topBarLogo">
+				<img src="../logos/investing-com-logo.png" alt="Investing.com - Financial Markets Worldwide" class="investingLogo">
+			</a></h1>
+		<div class="topBarTools">
+			<span id="userAccount" class="topBarUserAvatar js-open-auth-trigger-inside">
+					<div class="topBarText"><a onclick="overlay.overlayLogin();" href="javascript:void(0);" class="login bold">登录</a>/<a onclick="overlay.overlayRegister(); topBarPopup.trackTopBarGAEvent('Sign Up')" href="javascript:void(0);" class="register bold">免费注册</a></div>			</span>
+
+			<div class="newSigninPopup tooltipPopup displayNone js-alerts-feed-popup-signin bigArrowTopbar">
+	<div class="header js-header">最新提醒</div>
+	<div class="content">
+		<span class="signinIcon js-icon"></span>
+		<div class="signInText js-explain-text">注册以创建品种、
+财经事件和所关注作者内容的提醒</div>
+		<a href="javascript:void(0);" onclick="overlay.overlayRegister();" id="signUPBtn" class="newButton orange">免费注册</a>		<div class="align_center">已有账户？ <a href="javascript:overlay.overlayLogin();" class="bold">登录</a></div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+<div class="generalOverlay displayNone"></div>
+<div class="productPageSubscribedWrapper">
+	<div class="productPageSubscribedInner">
+		</div>
+        	<script>
+		let pageBody = $('body.adFreeBg');
+		//add sale bg class and img link
+		pageBody.addClass('saleBg ');
+		document.documentElement.style
+			.setProperty('--sale-background-image', 'url()');
+	</script>
+	<link href="../css-OpenSans400600700_swap.css" rel="stylesheet">
+	<div class="adFreeSubscriptionPricing ">
+	<div class="adFreeSubscriptionPricingHeader">
+		<div class="text">
+			<h2 class="adFreeSubscriptionPricingHeaderTitle">升级您的体验</h2>
+			<ul class="adFreeSubscriptionBenefits">
+				<li>全平台无广告</li>
+				<li>100%无广告</li>
+				<li>极速浏览</li>
+			</ul>
+		</div>
+		<img src="../images/adfree/Ad-Free_LP.png" alt="">
+
+	</div>
+	<ul class="adFreeSubscriptionPlans">
+		<li class="pricePlan">
+			<div>
+				<div class="period">单月</div>
+				<p>欢迎试用</p>
+				<div class="price">
+											<span class="currency">&#x00A5;</span>
+										<span class="amount">49.31</span>
+										<span>/月</span>
+				</div>
+				<button class="selectPlanBtn js-select-plan-btn" sku="3277403" data-plan="monthly">选购</button>
+				<p class="pricingDisclaimer">月付</p>
+			</div>
+		</li>
+		<li class="pricePlan">
+			<div>
+				<div class="pricePlanMostPopular"><i class="goldenLikeIcon"></i> 热门</div>
+				<div class="period">包年</div>
+				<p class="greenFont">优惠20%</p>
+				<div class="price">
+											<span class="currency">&#x00A5;</span>
+										<span class="amount">39.43</span>
+										<span>/月</span>
+				</div>
+				<button class="selectPlanBtn mostPopularPlanBtn js-select-plan-btn" sku="3277407" data-plan="yearly">选购</button>
+				<p class="pricingDisclaimer">每年付款一次</p>
+			</div>
+		</li>
+		<li class="pricePlan">
+			<div>
+				<div class="period">2年</div>
+				<p class="greenFont">优惠40%</p>
+				<div class="price">
+											<span class="currency">&#x00A5;</span>
+										<span class="amount">29.57</span>
+										<span>/月</span>
+				</div>
+				<button class="selectPlanBtn js-select-plan-btn" sku="3277405" data-plan="biennially">选购</button>
+				<p class="pricingDisclaimer">每两年付款一次</p>
+			</div>
+		</li>
+	</ul>
+	<div class="adFreeSubscriptionLegalInfo">
+		<div class="acceptedPaymentMethods">
+			<p>接受的付款方法</p>
+			<ul class="paymentMethods">
+				<li><span class="paymentMethod amex" title="American Express"></span></li>
+				<li><span class="paymentMethod visa" title="Visa"></span></li>
+				<li><span class="paymentMethod mastercard" title="Mastercard"></span></li>
+				<li><span class="paymentMethod diners" title="Diners"></span></li>
+				<li><span class="paymentMethod paypal" title="PayPal"></span></li>
+			</ul>
+		</div>
+		<div class="adFreeSubscriptionDisclaimer">自动续费，可随时取消。本价格不包含增值税，最终价格请见付款前的订单页面，并会受到汇率影响。</div>
+	</div>
+	<div class="adFreeSubscriptionQnA">
+		<h2>常见问题</h2>
+		<div class="questionBlock">
+			<h4>无广告服务包括哪些服务？</h4>
+			<p>您在订阅英为财情Investing.com无广告服务并登录后，我们的桌面以及移动网页端将向您提供无广告体验。无广告服务的益处包括，您可集中精力处理更重要的事情，以及因无需加载广告，网站的加载速度将变得更快。但是，此功能不提供实时数据或其它特色功能。</p>
+		</div>
+
+		<div class="questionBlock">
+			<h4>订阅无广告服务后，在我所有的设备上都不会显示广告吗？</h4>
+			<p>如果您购买了无广告服务，您的帐户在我们的桌面端以及移动端网站均可享受无广告服务。无论在家或者在办公室，甚至在旅途中，您都可享受该权益。我们将随时随地为您提供所需的工具和功能。
+请注意，目前中文版免广告服务暂不支持Android以及iOS设备。</p>
+		</div>
+
+		<div class="questionBlock">
+			<h4>如何取消无广告服务？</h4>
+			<p>如果您想要取消无广告服务，请通过您的注册电子邮箱或手机号码联系我们的用户支持，我们的服务中心将为您提供帮助。</p>
+		</div>
+
+		<div class="questionBlock">
+			<h4>续订无广告服务前，会通知我吗？</h4>
+			<p>无广告服务自动续订，即在到期时，我们会自动扣除无广告服务的订阅费，并延长该服务期限。按照“如何取消无广告服务”问题下的指引，您可以随时取消订阅续费。在付费期内，您会一直享有无广告服务。</p>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	(function () {
+		window.plans_data = {
+			'monthly': {"id":"12","module":"adFree","time_to_life":"One Month","price":"7.49","sku":"3277403","trial":null,"is_active":"Yes","price_per_month":7.49,"price_per_month_converted":"49.31","price_converted":"49.31"},
+			'yearly': {"id":"11","module":"adFree","time_to_life":"One Year","price":"71.88","sku":"3277407","trial":null,"is_active":"Yes","price_per_month":5.989999999999999,"price_per_month_converted":"39.43","price_converted":"473.20"},
+			'biennially': {"id":"13","module":"adFree","time_to_life":"Two Years","price":"107.80","sku":"3277405","trial":null,"is_active":"Yes","price_per_month":4.491666666666666,"price_per_month_converted":"29.57","price_converted":"709.67"}		};
+		window.plan_price_data = {
+			cart: {
+				'charged-currency': '',
+				'cart-item': {
+					sku: {
+						'sku-id': '2556631'
+					},
+					quantity: '1',
+					'item-sub-total': '0.00',
+					'item-coupon-total': '0.00',
+					'item-total': '0.00'
+				},
+				coupons: {
+					'coupons-total': '0.00'
+				},
+				tax: '0.00',
+				'tax-rate': '0',
+				'total-cart-cost': '0.00',
+				'currency-sign': '&#x24;'
+			},
+		};
+
+		$('.js-choose-plan-radio').each(function () {
+			let data_plan = $(this).attr('data-plan'),
+				sku = window.plans_data[data_plan].sku,
+				price = window.plans_data[data_plan]['price_converted'];
+			$(this).attr('sku', sku).next().find('.amount').text(price);
+		});
+
+		$('.js-select-plan-btn').click(function () {
+			let $user_ID = $(this).attr('user_ID'),
+				$skuCode = $(this).attr('sku'),
+				$enc = $(this).attr('enc'),
+				$currencySymbol = $(this).parents('.pricePlan').find('.currency').text(),
+				$plan = $(this).attr('data-plan'),
+				$price = '',
+				ga_plan_type = `${$plan.charAt(0).toUpperCase() + $plan.slice(1)} plan`,
+				ga_event = {},
+				checkout_popup = $('.js-checkout-popup');
+			if (ga_plan_type === 'Biennially plan') {
+				ga_plan_type = '2 Years plan';
+			}
+			ga_event = {
+				category: 'Ad-Free Subscription',
+				action: 'CTA - Select button clicked',
+				label: ga_plan_type,
+				cd82: `Ad-Free Subscription - ${ga_plan_type}`,
+				cd131: `Ad-Free Subscription - billboard_message`
+			};
+			window.ga('allSitesTracker.send', 'event', ga_event.category, ga_event.action, ga_event.label, {
+				dimension82: ga_event.cd82,
+				dimension131: ga_event.cd131
+			})
+			if (!$user_ID) {
+				overlay.authCompleteAction = {"type": 'adFree', "actionData": {"sku": $skuCode, "enc": $enc}};
+				overlay.overlayLogin();
+			} else {
+				console.log(`selected sku ${$skuCode}`);
+				switch ($skuCode) {
+					case '3277403':
+						// $plan = 'monthly';
+						$price = '7.49';
+						break;
+					case '3277407':
+						// $plan = 'yearly';
+						$price = '71.88';
+						break;
+					case '3277405':
+						// $plan = 'biennially';
+						$price = '107.80';
+						break;
+				}
+				window.bluesnapSettings.pf_form_data.sku = $skuCode;
+				window.bluesnapSettings.pf_form_data.ads_free_plan = $plan;
+				window.bluesnapSettings.pf_form_data.plan = $plan;
+				window.bluesnapSettings.pf_form_data.currency_symbol = window.price_data.currency_symbol = $currencySymbol;
+				window.bluesnapSettings.pf_form_data.amount = window.price_data.cart["total-cart-cost"] = window.price_data.cart["item-sub-total"] = $price;
+				window.threeDSecureObj.amount = +$price;
+			}
+			showOverlay();
+			$('#loginPopup .closePopup, .generalOverlay').on('click',function(){
+				$('body').removeClass('noVerticalScroll noHorizontalScroll');
+			});
+			$('body').addClass('noVerticalScroll noHorizontalScroll');
+			checkout_popup.removeClass('displayNoneImp');
+			setTimeout(function () {
+				checkout_popup.trigger('checkoutPopupOpened');
+			}, 50)
+		});
+	})();
+</script>		</div>
+	
+
+<script type="text/javascript" src="../js/ads.js"></script>
+<script type="text/javascript" src="../instream/ad_status.js"></script>
+
+<script type="text/javascript">
+
+if(!Modernizr.csstransitions && ie !== 7) {
+	// Bind MouseOver effect to Navigation list nodes
+	$('.navMenuUL > li').bind('mouseenter', function() {
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.subTopMenuTwoColumnContainer', someelement).show();$('.arrow', someelement).show();$('.arrow2', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.subTopMenuTwoColumnContainer', someelement).hide();$('.arrow', someelement).hide();$('.arrow2', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    });
+    
+	// Bind MouseOver effect to Real Time Quotes list nodes
+	$('#navRealTime').bind('mouseenter', function() {
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    }); 
+
+	// Bind MouseOver effect to Real Time Quotes list nodes
+	$('.navRealTimeSubmenu .row').bind('mouseenter', function() {
+		
+        clearTimeout($(this).data('hideTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.navRealTimeSubMenuContainer', someelement).show(); }, 120);
+        $(someelement).data('showTimeout', timeoutId);
+    // Bind MouseOut effect to Navigation list nodes
+    }).bind('mouseleave', function() {
+        clearTimeout($(this).data('showTimeout'));
+        var someelement = this;
+        var timeoutId = setTimeout(function(){ $('.navRealTimeSubMenuContainer', someelement).hide(); }, 120);
+        $(someelement).data('hideTimeout', timeoutId);
+    });
+}
+$('#navRealTime').bind('click', function() {
+    clearTimeout($(this).data('hideTimeout'));
+    var someelement = this;
+    var timeoutId = setTimeout(function(){ $('.SubmenuNav', someelement).show(); }, 120);
+    $(someelement).data('showTimeout', timeoutId);
+});
+
+var _gaq = _gaq || [];
+//new
+    ga('create', 'UA-2555300-71', 'investing.com');
+    ga('create', 'UA-2555300-55', 'auto', {'name': 'allSitesTracker'});  // ALL sites tracker.
+
+    var prebidPreActive = '0';
+    ga('allSitesTracker.set', 'dimension37', (
+        window.helpers.getCookie("prebid_page") === '1' &&
+        window.helpers.getCookie("prebid_session") === '1' &&
+        prebidPreActive === '1'
+    ) ? 'page with prebid' : 'page without prebid');
+
+    
+        ga('allSitesTracker.set', 'dimension127', 0);
+    ga('require', 'displayfeatures');
+    ga('allSitesTracker.set', 'dimension73','Web');
+    ga('allSitesTracker.set', 'dimension17', getCookie('_ga').substr(6));
+    ga('allSitesTracker.set', 'dimension1', 0);
+	ga('allSitesTracker.set', 'dimension49', 'h885trutkecdiklulh2oaq0o62');
+	ga('allSitesTracker.set', 'dimension95', '6');
+
+    	ga('set', 'dimension73','Web');
+
+	ga('allSitesTracker.set', 'dimension106', 'No');
+	ga('allSitesTracker.set', 'dimension54', 'No');
+
+	var myDate = new Date();
+	ga('allSitesTracker.set', 'dimension81',myDate.getFullYear() + '/' +('0' + (myDate.getMonth()+1)).slice(-2)+ '/' +  ('0' + (myDate.getDate()+1)).slice(-2) + ' '+('0' + (myDate.getHours()+1)).slice(-2)+ ':'+('0' + (myDate.getMinutes())).slice(-2)+ ':'+('0' + (myDate.getSeconds()+1)).slice(-2));
+	    ga('send', 'pageview');
+    ga('allSitesTracker.set','&uid', 0);
+	<!-- Crypto Dimension LD -->
+	    <!--Adblock Check-->
+
+	jQuery(document).ready(checkAds());
+
+	function checkAds(){
+
+		function isIE() {
+			var ua = window.navigator.userAgent;
+			var trident = ua.indexOf('Trident/');
+			var edge = ua.indexOf('Edge/');
+			var msie = ua.indexOf('MSIE ');
+			return Math.max(msie,edge,trident)>0;
+
+		}
+
+		var isIE = isIE();
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && !isIE;
+		var isFireFox = /Firefox/.test(navigator.userAgent);
+		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+		var isOneOfThoseBrowsers = [isIE,isChrome,isFireFox,isSafari].indexOf(true)>-1;
+
+		var b = 2;
+
+		//var hasAdsenseBlock = !!$('#adsense').length;
+		//var hasShadowDom = (!!$("html")[0].shadowRoot);
+		//var headerIsShown = ($(".midHeader").height() > 0 && $(".midHeader").css('display') !== 'none');
+
+	    		  
+		if (window.google_ad_status == 1){
+
+    		var adbBlk = getCookie('adbBLk');
+    		if(isOneOfThoseBrowsers && adbBlk>0){
+        		ga('allSitesTracker.set', 'dimension22', '6_Blk_No');
+        		setCookie('adbBLk',6,-1000);
+    		}  
+    		
+    	}else{
+
+    	    b = 1;
+            $('#TopTextAd').css('display','flex');
+
+			if(isOneOfThoseBrowsers) {
+				setCookie('adbBLk',6,1000,'/');
+				ga('allSitesTracker.set', 'dimension21', '6_Blk_Yes');
+				 
+							}
+    	}
+		
+		$.ajax({
+		    url: "/jp.php?b="+b+"&k=Nmc_aDM0ZTAxNmFuYzAyNGMzZjU3YWFlMTNhMzE2Y2AyMzI2b2tjNWRiYWlhajllYmo0MGQ6MTYyZGY7MWZmZTYpP3YzPWViMSBhOGNiMjRjLGZrN29hITFlYSoxdmMrMmsyJ293YzVkbGFg&d=1&i=1606198372&e=1903102324&lip=hkweb4.forexpros.com&ti=1606198372",
+		    type: 'get',
+		    cache: false,
+		    type: 'GET',
+		    dataType: 'html',
+		    success: function (data) {
+		    	  console.log('server jp b1 hkweb4.forexpros.com');
+		    }
+		});
+    	
+    }
+
+    	
+	ga('allSitesTracker.send', 'pageview');
+	<!--End Adblock Check-->
+
+
+</script>
+    
+
+        <script>
+            var _hmt = _hmt || [];
+            (function()
+            { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?a1e3d50107c2a0e021d734fe76f85914"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); }
+            )();
+        </script>    
+
+ 
+<script>
+//disabled is a temporary argument for testing purposes 
+var BoxesEvents = function($,ga,disabled)
+{
+	var e_stack = []; //each event is pushed to this stack
+	//this objcet links urls to event types
+    var boxes = {"side_central_banks":"centralbanks","webmaster_tools":"wmt","Most_Popular_News":"mostpop","broker_promotions":"sb_promotions","marketMoversBoxWrapper":"sb_marketmovers","QBS_2_inner":"sb_indices","QBS_3_inner":"sb_commodities","QBS_1_inner":"sb_forex","QBS_4_inner":"sb_bonds","TSB_1_inner":"tsb_fx","TSB_2_inner":"tsb_commodities","TSB_3_inner":"tsb_indices","TSB_4_inner":"tsb_stocks"};
+
+    var resume_click_event = function(ev)
+    {
+    	if (ev['link']==='') {return;}
+        window.location.href = ev['link'];
+    }
+    
+    
+	var register_events = function()
+	{
+	    for (var id in boxes)
+	    {
+		    (function(id){
+			    var _$b = $('#'+id);
+			    if (_$b.length < 1) {return;}
+			    
+			    //box click event
+			    _$b.mouseup(function(e){
+					if (e.button === 2) {return true;} //right mouse button
+					var middleMouse = e.button === 1;
+				    if (!middleMouse) {e.preventDefault();}
+				    var box_event = boxes[id];
+				    e_stack.push({'event':box_event,'link':''});
+				    var ce = null; //current event 
+				    //function creator
+				    var callbackCreate = function(data) {return function() {resume_click_event(data);}}
+		            var hitCallback = null;
+		            
+				    while(ce = e_stack.pop())
+				    {
+						if (ce['link'].substr(0,10) === "javascript") {continue;}//if the link is javascript call ignore it
+						hitCallback = middleMouse ? function(){} : callbackCreate(ce);
+				    	//if a link with no event do nothing
+					    if (ce['event'] == '') {hitCallback(); return true;}
+						
+				    					        window.ga('t0.send',{
+                            'hitType': 'event',          
+                            'eventCategory': 'side-box-events',
+                            'eventAction': ce['event'], 
+                            'eventValue' : 1,
+                            'hitCallback': hitCallback //resume click event
+				            }
+				        );
+				        //fallback if ga doesn't work
+				        window.setTimeout(hitCallback,1500);
+				    }
+				    return middleMouse;
+			    });
+			    
+			    //link event 
+                _$b.on('mouseup','a',function(e){
+					if (e.button === 2) {return true;} //right mouse button
+                	e.preventDefault();
+					var url = this.getAttribute('href');
+					var event = this.getAttribute('data-gae');
+					e_stack.push({'event':'','link':url});
+					if (event)
+					{
+						e_stack.pop();
+						e_stack.push({'event':event,'link':url});
+					} 
+				  });
+    	        
+		    })(id);
+	    }		   	
+	};
+	
+    var init = function()
+    {
+        if (disabled) {return;}
+        if (typeof $ !== 'function') {return;}
+        if (typeof ga !== 'function') {return;}
+        register_events();
+    }();
+}(window.jQuery,window.ga,true);
+</script>
+</body>
+</html>
